@@ -4969,4 +4969,11 @@
     <!-- Theme installation error notification -->
     <string name="theme_install_error_title">Failed to install theme</string>
     <string name="theme_install_error_message">%s failed to install</string>
+
+    <!-- Privacy Guard -->
+    <string name="permlab_changePrivacyGuardState">Enable or disable privacy guard</string>
+    <string name="permdesc_changePrivacyGuardState">Allows the app to change whether another app runs with privacy guard. When an app is running with Privacy Guard, it will not have access to personal data such as contacts, call logs, or messages.</string>
+    <string name="privacy_guard_notification">Privacy guard active</string>
+    <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> will not be able to access personal data</string>
+    <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> will not be able to access custom permissions</string>
 </resources>
