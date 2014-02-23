@@ -1902,4 +1902,7 @@
 
     <!-- Configuartion to set zen mode when silent mode is on -->
     <bool name="config_setZenModeWhenSilentModeOn">false</bool>
+
+    <!-- If this is true, key chords can be used to take a screen record on the device. -->
+    <bool name="config_enableScreenrecordChord">true</bool>
 </resources>
