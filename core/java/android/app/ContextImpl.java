@@ -19,6 +19,8 @@ package android.app;
 import android.app.usage.IUsageStatsManager;
 import android.app.usage.UsageStatsManager;
 import android.appwidget.AppWidgetManager;
+import android.hardware.ITorchService;
+import android.hardware.TorchManager;
 import android.os.Build;
 
 import android.service.persistentdata.IPersistentDataBlockService;
@@ -772,6 +774,14 @@ class ContextImpl extends Context {
         }
         return (ContextImpl)context;
     }
+
+        registerService(TORCH_SERVICE, new ServiceFetcher() {
+            public Object createService(ContextImpl ctx) {
+                IBinder b = ServiceManager.getService(TORCH_SERVICE);
+                ITorchService service = ITorchService.Stub.asInterface(b);
+                final Context outerContext = ctx.getOuterContext();
+                return new TorchManager(outerContext, service);
+            }});
 
     // The system service cache for the system services that are
     // cached per-ContextImpl.  Package-scoped to avoid accessor
