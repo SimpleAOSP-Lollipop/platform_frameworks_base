@@ -3773,9 +3773,9 @@
     <!-- See EXTMEDIA_FORMAT.  EXTMEDIA_FORMAT_DIALOG:  After the user selects the notification, a dialog is shown asking if he wants to format the SD card.  This is the title. -->
     <string name="extmedia_format_title" product="default">Format SD card?</string>
     <!-- See EXTMEDIA_FORMAT.   This is the message. [CHAR LIMIT=NONE] -->
-    <string name="extmedia_format_message" product="nosdcard">All files stored in your USB storage (under path \'%1$s\') will be erased. This action can\'t be reversed!</string>
+    <string name="extmedia_format_message" product="nosdcard">All files stored in your USB storage will be erased. This action can\'t be reversed!</string>
     <!-- See EXTMEDIA_FORMAT.   This is the message. -->
-    <string name="extmedia_format_message" product="default">All data on your card (under path \'%1$s\') will be erased. This action can\'t be reversed!</string>
+    <string name="extmedia_format_message" product="default">All data on your card will be lost.</string>
     <!-- See EXTMEDIA_FORMAT.    This is the button text to format the sd card. -->
     <string name="extmedia_format_button_format">Format</string>
 
@@ -4990,4 +4990,9 @@
     <string name="permlab_accessTorchService">access torch service</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_accessTorchService">Allows an app to access the torch service. Should never be needed for normal apps.</string>
+
+    <!-- See EXTMEDIA_FORMAT.   This is the message. [CHAR LIMIT=NONE] -->
+    <string name="extmedia_format_message_cm" product="nosdcard">All data on your USB storage (under path \'%1$s\') will be erased. This action can\'t be reversed!</string>
+    <!-- See EXTMEDIA_FORMAT.   This is the message. -->
+    <string name="extmedia_format_message_cm" product="default">All data on your card (under path \'%1$s\') will be erased. This action can\'t be reversed!</string>
 </resources>
