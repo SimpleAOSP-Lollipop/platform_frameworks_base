@@ -2136,4 +2136,7 @@
   <java-symbol type="drawable" name="stat_notify_privacy_guard_off_plus" />
   <java-symbol type="drawable" name="stat_notify_privacy_guard_custom_plus" />
   <java-symbol type="drawable" name="stat_notify_privacy_guard_custom_plus_light" />
+
+  <!-- Storage -->
+  <java-symbol type="string" name="extmedia_format_message_cm" />
 </resources>
