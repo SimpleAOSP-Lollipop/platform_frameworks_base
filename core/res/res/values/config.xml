@@ -1853,4 +1853,7 @@
     <bool name="config_switch_phone_on_voice_reg_state_change">true</bool>
 
     <bool name="config_sms_force_7bit_encoding">false</bool>
+
+    <!-- kill app long press back -->
+    <integer name="config_backKillTimeout">1500</integer>
 </resources>
