@@ -1855,5 +1855,5 @@
     <bool name="config_sms_force_7bit_encoding">false</bool>
 
     <!-- kill app long press back -->
-    <integer name="config_backKillTimeout">1500</integer>
+    <integer name="config_backKillTimeout">500</integer>
 </resources>
