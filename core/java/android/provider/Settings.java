@@ -2771,6 +2771,12 @@ public final class Settings {
         public static final String VOLUME_WAKE_SCREEN = "volume_wake_screen";
 
         /**
+        * Volume adjust sound
+        * @hide
+        */
+        public static final String VOLUME_KEY_ADJUST_SOUND = "volume_key_adjust_sound";
+
+        /**
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
