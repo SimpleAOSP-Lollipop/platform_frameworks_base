@@ -2861,12 +2861,6 @@ public final class Settings {
         public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
         /**
-         * Whether to show/hide status bar native battery percentage
-         * @hide
-         */
-        public static final String STATUS_BAR_NATIVE_BATTERY_PERCENTAGE = "status_bar_native_battery_percentage";
-
-        /**
          * Volume keys control cursor in text fields (default is 0)
          * 0 - Disabled
          * 1 - Volume up/down moves cursor left/right
