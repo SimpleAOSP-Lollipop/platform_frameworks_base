@@ -62,6 +62,7 @@ import com.android.systemui.statusbar.policy.UserInfoController;
 public class StatusBarHeaderView extends RelativeLayout implements View.OnClickListener,
         BatteryController.BatteryStateChangeCallback, NextAlarmController.NextAlarmChangeCallback {
 
+    private boolean mBatteryCharging;
     private boolean mExpanded;
     private boolean mListening;
 
@@ -352,7 +353,7 @@ public class StatusBarHeaderView extends RelativeLayout implements View.OnClickL
             updateSignalClusterDetachment();
         }
         mEmergencyCallsOnly.setVisibility(mExpanded && mShowEmergencyCallsOnly ? VISIBLE : GONE);
-        mBatteryLevel.setVisibility(((mExpanded && mShowBatteryText == 0)
+        mBatteryLevel.setVisibility(((mExpanded && (mShowBatteryText == 0 || mBatteryCharging))
                 || mShowBatteryText == 2) ? View.VISIBLE : View.GONE);
     }
 
@@ -421,6 +422,7 @@ public class StatusBarHeaderView extends RelativeLayout implements View.OnClickL
     @Override
     public void onBatteryLevelChanged(int level, boolean pluggedIn, boolean charging) {
         mBatteryLevel.setText(getResources().getString(R.string.battery_level_template, level));
+        mBatteryCharging = charging;
     }
 
     @Override
