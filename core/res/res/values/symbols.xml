@@ -2079,6 +2079,9 @@
   <java-symbol type="string" name="app_killed_message" />
   <java-symbol type="integer" name="config_backKillTimeout" />
 
+  <!-- ime switcher -->
+  <java-symbol type="bool" name="config_show_cmIMESwitcher"/>
+
   <!-- Power menu reboot -->
   <java-symbol name="reboot_confirm" type="string" />
   <java-symbol name="reboot_title" type="string" />
