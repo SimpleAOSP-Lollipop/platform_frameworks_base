@@ -3117,6 +3117,12 @@ public final class Settings {
          * @hide
          */
         public static final String LONG_PRESS_KILL_DELAY = "long_press_kill_delay";
+	
+	/**
+	 * Clear Recents in navbar enabler
+         * @hide
+         */
+        public static final String CLEAR_ALL_RECENTS_NAVBAR_ENABLED = "clear_all_recents_navbar_enabled";
 
         /**
          * Volume music controls
