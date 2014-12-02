@@ -5302,6 +5302,12 @@ public final class Settings {
         public static final String ADVANCED_REBOOT = "advanced_reboot";
 
         /**
+         * Whether user is allowed to pull down quick settings on secure keyguard.
+         * @hide
+         */
+        public static final String STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD = "status_bar_locked_on_secure_keyguard";
+
+        /**
          * Whether to display a menu containing 'Wipe data', 'Force close' and other options
          * in the notification area and in the recent app list
          * @hide
@@ -5360,7 +5366,8 @@ public final class Settings {
             UI_NIGHT_MODE,
             SLEEP_TIMEOUT,
             ADVANCED_REBOOT,
-            DEVELOPMENT_SHORTCUT
+            DEVELOPMENT_SHORTCUT,
+            STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD
         };
 
         /**
