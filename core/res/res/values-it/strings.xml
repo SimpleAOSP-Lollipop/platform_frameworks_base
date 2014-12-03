@@ -1783,4 +1783,21 @@
     <item quantity="other" msgid="5408537517529822157">"Per %d ore"</item>
   </plurals>
     <string name="zen_mode_forever" msgid="4316804956488785559">"Sempre"</string>
+    <string name="app_killed_message">Applicazione chiusa</string>
+    <string name="reboot_title">Riavvio</string>
+    <string name="reboot_confirm" product="tablet">Il tuo tablet si riavvierà</string>
+    <string name="reboot_confirm" product="default">Il tuo telefono si riavvierà</string>
+    <string name="global_action_reboot">Riavvio</string>
+    <string name="reboot_progress">Riavvio\u2026</string>
+    <string name="reboot_reboot">Riavvio</string>
+    <string name="reboot_recovery">Recovery</string>
+    <string name="reboot_bootloader">Bootloader</string>
+    <string name="reboot_soft">Riavvio veloce</string>
+    <string name="global_action_screenshot">Screenshot</string>
+    <string name="permgrouplab_security">Sicurezza</string>
+    <string name="permgroupdesc_security">Permessi legati alle informazioni di sicurezza del dispositivo</string>
+    <string name="permlab_readPhoneBlacklist">leggi blacklist telefono</string>
+    <string name="permdesc_readPhoneBlacklist">Permetti all\'app di leggere informazioni sui numeri che sono stati bloccati per le chiamate in corso e/o i messaggi</string>
+    <string name="permlab_changePhoneBlacklist">cambia blacklist telefono</string>
+    <string name="permdesc_changePhoneBlacklist">Permetti all\'app di cambiare i numeri che sono stati bloccati per le chiamate in corso e/o i messaggi</string>
 </resources>
