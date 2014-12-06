@@ -5331,6 +5331,12 @@ public final class Settings {
         public static final String STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD = "status_bar_locked_on_secure_keyguard";
 
         /**
+         * Whether to use the custom quick unlock screen control
+         * @hide
+         */
+        public static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
+
+        /**
          * Whether to display a menu containing 'Wipe data', 'Force close' and other options
          * in the notification area and in the recent app list
          * @hide
@@ -5390,7 +5396,8 @@ public final class Settings {
             SLEEP_TIMEOUT,
             ADVANCED_REBOOT,
             DEVELOPMENT_SHORTCUT,
-            STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD
+            STATUS_BAR_LOCKED_ON_SECURE_KEYGUARD,
+            LOCKSCREEN_QUICK_UNLOCK_CONTROL
         };
 
         /**
