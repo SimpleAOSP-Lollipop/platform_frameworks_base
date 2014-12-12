@@ -117,6 +117,8 @@
     <!-- Development Shortcut -->
     <uses-permission android:name="android.permission.CLEAR_APP_USER_DATA" /> 
     <uses-permission android:name="android.permission.FORCE_STOP_PACKAGES" />
+    <!-- Weather -->
+    <uses-permission android:name="com.cyanogenmod.lockclock.permission.READ_WEATHER" />
 
     <application
         android:name=".SystemUIApplication"

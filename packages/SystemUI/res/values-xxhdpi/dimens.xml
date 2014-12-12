@@ -22,4 +22,6 @@
          fraction of a pixel.-->
     <fraction name="battery_subpixel_smoothing_left">33%</fraction>
     <fraction name="battery_subpixel_smoothing_right">33%</fraction>
+
+    <dimen name="weather_text_size">12sp</dimen>
 </resources>

@@ -25,4 +25,6 @@
     <fraction name="battery_subpixel_smoothing_right">12%</fraction>
 
     <dimen name="battery_margin_bottom">1px</dimen>
+
+    <dimen name="weather_text_size">10sp</dimen>
 </resources>
