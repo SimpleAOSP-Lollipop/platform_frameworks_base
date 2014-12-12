@@ -160,6 +160,12 @@ public class DisconnectCause {
      */
     public static final int OUTGOING_CANCELED = 44;
 
+    /**
+     * Call was rejected due to number being blacklisted by user.
+     * {@@hide}
+     */
+    public static final int CALL_BLACKLISTED = 400;
+
     /** Smallest valid value for call disconnect codes. */
     public static final int MINIMUM_VALID_VALUE = NOT_DISCONNECTED;
 
@@ -262,6 +268,8 @@ public class DisconnectCause {
             return "OUTGOING_FAILURE";
         case OUTGOING_CANCELED:
             return "OUTGOING_CANCELED";
+        case CALL_BLACKLISTED:
+            return "CALL_BLACKLISTED";
         default:
             return "INVALID: " + cause;
         }
