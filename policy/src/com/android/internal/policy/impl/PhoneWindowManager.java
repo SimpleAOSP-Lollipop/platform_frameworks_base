@@ -1366,10 +1366,6 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     Settings.Secure.INCALL_POWER_BUTTON_BEHAVIOR_DEFAULT,
                     UserHandle.USER_CURRENT);
 
-            // volume rocker wake
-            mVolumeRockerWake = Settings.System.getIntForUser(resolver,
-                    Settings.System.VOLUME_ROCKER_WAKE, 0, UserHandle.USER_CURRENT) != 0;
-
             mBackKillTimeout = Settings.System.getIntForUser(resolver,
                     Settings.System.LONG_PRESS_KILL_DELAY, 1000, UserHandle.USER_CURRENT);
 
@@ -1457,6 +1453,11 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             if (mImmersiveModeConfirmation != null) {
                 mImmersiveModeConfirmation.loadSetting(mCurrentUserId);
             }
+
+            // volume rocker wake
+            mVolumeRockerWake = Settings.System.getIntForUser(resolver,
+                    Settings.System.VOLUME_ROCKER_WAKE, 0, UserHandle.USER_CURRENT) == 1;
+
             PolicyControl.reloadFromSetting(mContext);
         }
         if (updateRotation) {
@@ -4424,12 +4425,9 @@ public class PhoneWindowManager implements WindowManagerPolicy {
         }
 
         // Basic policy based on interactive state.
-        final boolean isVolumeRockerWake = !isScreenOn()
-                && mVolumeRockerWake
-                && (keyCode == KeyEvent.KEYCODE_VOLUME_UP || keyCode == KeyEvent.KEYCODE_VOLUME_DOWN);
         int result;
         boolean isWakeKey = (policyFlags & WindowManagerPolicy.FLAG_WAKE) != 0
-                || event.isWakeKey() || isVolumeRockerWake;
+                || event.isWakeKey();
         if (interactive || (isInjected && !isWakeKey)) {
             // When the device is interactive or the key is injected pass the
             // key to the application.
@@ -4736,11 +4734,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             // ignore volume keys unless docked
             case KeyEvent.KEYCODE_VOLUME_UP:
             case KeyEvent.KEYCODE_VOLUME_DOWN:
-                if (mVolumeRockerWake) {
-                    return true;
-                }
             case KeyEvent.KEYCODE_VOLUME_MUTE:
-                return mDockMode != Intent.EXTRA_DOCK_STATE_UNDOCKED;
+                return mVolumeRockerWake || mDockMode != Intent.EXTRA_DOCK_STATE_UNDOCKED;
 
             // ignore media and camera keys
             case KeyEvent.KEYCODE_MUTE:
