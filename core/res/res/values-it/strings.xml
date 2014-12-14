@@ -1800,4 +1800,6 @@
     <string name="permdesc_readPhoneBlacklist">Permetti all\'app di leggere informazioni sui numeri che sono stati bloccati per le chiamate in corso e/o i messaggi</string>
     <string name="permlab_changePhoneBlacklist">cambia blacklist telefono</string>
     <string name="permdesc_changePhoneBlacklist">Permetti all\'app di cambiare i numeri che sono stati bloccati per le chiamate in corso e/o i messaggi</string>
+    <string name="permlab_setKeyguardWallpaper">imposta sfondo lockscreen</string>
+    <string name="permdesc_setKeyguardWallpaper">Permette all\'app di cambiare lo sfondo della lockscreen.</string>
 </resources>
