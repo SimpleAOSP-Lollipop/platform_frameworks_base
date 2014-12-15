@@ -729,11 +729,12 @@ public class NetworkControllerImpl extends BroadcastReceiver
                     }
                     break;
                 case TelephonyManager.NETWORK_TYPE_HSPAP:
-                    mDataIconList = TelephonyIcons.DATA_HP[mInetCondition];
-                    mDataTypeIconId = R.drawable.stat_sys_data_fully_connected_hp;
-                    mQSDataTypeIconId = TelephonyIcons.QS_DATA_HP[mInetCondition];
+                    mDataIconList = TelephonyIcons.DATA_HP[inetCondition];
+                    mDataTypeIconId = showDataTypeIcon ?
+                                R.drawable.stat_sys_data_fully_connected_hp : 0;
+                    mQSDataTypeIconId = TelephonyIcons.QS_DATA_HP[inetCondition];
                     mContentDescriptionDataType = mContext.getString(
-                            R.string.accessibility_data_connection_HP);
+                                R.string.accessibility_data_connection_HP);
                     break;
                 case TelephonyManager.NETWORK_TYPE_CDMA:
                     if (!mShowAtLeastThreeGees) {
