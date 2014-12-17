@@ -364,4 +364,8 @@
     <string name="advanced_dev_option_wipe_app">Cancella dati app</string>
     <string name="advanced_dev_option_force_stop">Chiusura forzata</string>
     <string name="advanced_dev_option_uninstall">Disinstalla</string>
+    <string name="heads_up_snooze_message">Heads up sarà disattivato per <xliff:g id="number">%d</xliff:g> minuti</string>
+    <string name="heads_up_snooze_button_title">Timer disattivazione heads up</string>
+    <string name="notification_inspect_heads_up_title_enabled">Attiva heads up per questa app</string>
+    <string name="notification_inspect_heads_up_title_disabled">Disattiva heads up per questa app</string>
 </resources>
