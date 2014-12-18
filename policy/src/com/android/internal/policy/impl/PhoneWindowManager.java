@@ -370,6 +370,11 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     int mBackKillTimeout;
     int mPointerLocationMode = 0; // guarded by mLock
 
+    // During wakeup by volume keys, we still need to capture subsequent events
+    // until the key is released. This is required since the beep sound is produced
+    // post keypressed.
+    boolean mVolumeWakeTriggered;
+
     // The last window we were told about in focusChanged.
     WindowState mFocusedWindow;
     IApplicationToken mFocusedApp;
@@ -4468,6 +4473,16 @@ public class PhoneWindowManager implements WindowManagerPolicy {
             case KeyEvent.KEYCODE_VOLUME_DOWN:
             case KeyEvent.KEYCODE_VOLUME_UP:
             case KeyEvent.KEYCODE_VOLUME_MUTE: {
+		// Eat all down & up keys when using volume wake.
+                // This disables volume control, music control, and "beep" on key up.
+                if (isWakeKey && mVolumeRockerWake) {
+                    mVolumeWakeTriggered = true;
+                    break;
+                } else if (mVolumeWakeTriggered && !down) {
+                    result &= ~ACTION_PASS_TO_USER;
+                    mVolumeWakeTriggered = false;
+                    break;
+                }
                 if (keyCode == KeyEvent.KEYCODE_VOLUME_DOWN) {
                     if (down) {
                         if (interactive && !mVolumeDownKeyTriggered
@@ -4529,8 +4544,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     }
                 }
 
-                // Disable music and volume control when used as wake key
-                if ((result & ACTION_PASS_TO_USER) == 0 && !mVolumeRockerWake) {
+                if ((result & ACTION_PASS_TO_USER) == 0) {
+
                     boolean mayChangeVolume = false;
 
                     if (isMusicActive()) {
