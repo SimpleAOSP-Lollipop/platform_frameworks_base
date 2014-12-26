@@ -368,10 +368,4 @@
     <string name="advanced_dev_option_wipe_app">Nettoyer les données d\'applications</string>
     <string name="advanced_dev_option_force_stop">Forcer l\'arrêt</string>
     <string name="advanced_dev_option_uninstall">Désinstaller</string>
-
-    <!-- Heads up -->
-    <string name="heads_up_snooze_message">Les notifications flottantes sont désactivées pendant <xliff:g id="number">%d</xliff:g> minutes.</string>
-    <string name="heads_up_snooze_button_title">Répétition</string>
-    <string name="notification_inspect_heads_up_title_enabled">Activer la notification flottante pour cette application</string>
-    <string name="notification_inspect_heads_up_title_disabled">Désactiver la notification flottante pour cette application</string>
 </resources>
