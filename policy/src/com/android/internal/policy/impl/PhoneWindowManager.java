@@ -2307,12 +2307,12 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     @Override
     public long interceptKeyBeforeDispatching(WindowState win, KeyEvent event, int policyFlags) {
         final boolean keyguardOn = keyguardOn();
-        final int keyCode = event.getKeyCode();
         final int repeatCount = event.getRepeatCount();
         final int metaState = event.getMetaState();
         final int flags = event.getFlags();
         final boolean down = event.getAction() == KeyEvent.ACTION_DOWN;
         final boolean canceled = event.isCanceled();
+        int keyCode = event.getKeyCode();
 
         if (DEBUG_INPUT) {
             Log.d(TAG, "interceptKeyTi keyCode=" + keyCode + " down=" + down + " repeatCount="
@@ -4573,20 +4573,21 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                             // on key down events
                             mayChangeVolume = down;
                         }
-                        if (mayChangeVolume) {
-                            // If we aren't passing to the user and no one else
-                            // handled it send it to the session manager to figure
-                            // out.
+                     }
 
-                            // Rewrite the event to use key-down as sendVolumeKeyEvent will
-                            // only change the volume on key down.
-                            KeyEvent newEvent = new KeyEvent(KeyEvent.ACTION_DOWN, keyCode);
-                            MediaSessionLegacyHelper.getHelper(mContext)
-                                    .sendVolumeKeyEvent(newEvent, true);
-                        }
-                    }
+                     if (mayChangeVolume) {
+                         // If we aren't passing to the user and no one else
+                         // handled it send it to the session manager to figure
+                         // out.
+
+                         // Rewrite the event to use key-down as sendVolumeKeyEvent will
+                         // only change the volume on key down.
+                         KeyEvent newEvent = new KeyEvent(KeyEvent.ACTION_DOWN, keyCode);
+                         MediaSessionLegacyHelper.getHelper(mContext)
+                                 .sendVolumeKeyEvent(newEvent, true);
+                     }
+                     break;
                 }
-
                 break;
             }
 
