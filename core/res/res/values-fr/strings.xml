@@ -1783,4 +1783,54 @@
     <item quantity="other" msgid="5408537517529822157">"Pendant %d heures"</item>
   </plurals>
     <string name="zen_mode_forever" msgid="4316804956488785559">"Indéfiniment"</string>
+    
+    <!-- kill app long press back -->
+    <string name="app_killed_message">Application arrêtée</string>
+
+    <!-- Title of dialog to confirm rebooting. -->
+    <string name="reboot_title">Redémarrer</string>
+
+    <!-- Reboot Confirmation Dialog.  When the user chooses to reboot the device, there will
+         be a confirmation dialog.  This is the message. -->
+    <string name="reboot_confirm" product="tablet">Votre tablette redémarre.</string>
+    <string name="reboot_confirm" product="default">Votre smartphone redémarre.</string>
+
+    <!-- label for item that reboots the phone in phone options dialog -->
+    <string name="global_action_reboot">Redémarrer</string>
+
+    <!-- label for item that screenshots in phone options dialog -->
+    <string name="global_action_screenshot">Capture d\'écran</string>
+
+    <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
+    <string name="reboot_progress">redémarrage\u2026</string>
+
+    <!-- Reboot menu -->
+    <!-- Button to reboot the phone, within the Reboot Options dialog -->
+    <string name="reboot_reboot">Redémarrer</string>
+    <!-- Button to reboot the phone into recovery, within the Reboot Options dialog -->
+    <string name="reboot_recovery">Recovery</string>
+    <!-- Button to reboot the phone into bootloader, within the Reboot Options dialog -->
+    <string name="reboot_bootloader">Bootloader</string>
+    <!-- Button to soft reboot the device, within the Reboot Options dialog -->
+    <string name="reboot_soft">redémarrage logiciel</string>
+
+    <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_security">Sécurité</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_security">Permissions relatives à l\'information de sécurité de l\'appareil.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneBlacklist">Lire la liste noire téléphonique</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneBlacklist">Permet a une application de lire des informations sur les numéros de téléphone qui sont bloqués pour les appels ou les messages entrants.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_changePhoneBlacklist">Changer la liste noire du téléphone</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_changePhoneBlacklist">Permet à une application de modifier les numéros de téléphone qui sont bloqués pour les appels ou les messages entrants.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want the application to do this. -->
+    <string name="permlab_setKeyguardWallpaper">Définir le papier peint de l\'écran de verrouillage</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_setKeyguardWallpaper">Permet à une application de modifier le fond d\'écran de verrouillage.</string>
 </resources>
