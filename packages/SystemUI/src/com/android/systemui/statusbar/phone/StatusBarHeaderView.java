@@ -517,6 +517,7 @@ public class StatusBarHeaderView extends RelativeLayout implements View.OnClickL
         } else if (v == mDateGroup) {
             startDateActivity();
         }
+        mQSPanel.vibrateTile(20);
     }
 
     private void startSettingsActivity() {
