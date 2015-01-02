@@ -292,6 +292,27 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
                 mItems.add(new PowerAction());
             } else if (GLOBAL_ACTION_KEY_REBOOT.equals(actionKey)) {
                 mItems.add(new RebootAction());
+		// next: screen record, if enabled
+                mItems.add(
+                    new SinglePressAction(com.android.internal.R.drawable.ic_lock_screen_record,
+                            R.string.global_action_screen_record) {
+
+                        public void onPress() {
+                            toggleScreenRecord();
+                        }
+
+                        public boolean onLongPress() {
+                            return false;
+                        }
+
+                        public boolean showDuringKeyguard() {
+                            return true;
+                        }
+
+                        public boolean showBeforeProvisioning() {
+                            return true;
+                        }
+                    });
             } else if (GLOBAL_ACTION_KEY_SCREENSHOT.equals(actionKey)) {
                 mItems.add(getScreenshotAction());
             } else if (GLOBAL_ACTION_KEY_AIRPLANE.equals(actionKey)) {
@@ -319,28 +340,6 @@ class GlobalActions implements DialogInterface.OnDismissListener, DialogInterfac
             // Add here so we don't add more than one.
             addedKeys.add(actionKey);
         }
-
- 		// next: screen record, if enabled
-                mItems.add(
-                    new SinglePressAction(com.android.internal.R.drawable.ic_lock_screen_record,
-                            R.string.global_action_screen_record) {
-
-                        public void onPress() {
-                            toggleScreenRecord();
-                        }
-
-                        public boolean onLongPress() {
-                            return false;
-                        }
-
-                        public boolean showDuringKeyguard() {
-                            return true;
-                        }
-
-                        public boolean showBeforeProvisioning() {
-                            return true;
-                        }
-                    });
 
         mAdapter = new MyAdapter();
 
