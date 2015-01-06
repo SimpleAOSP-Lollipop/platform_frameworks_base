@@ -364,6 +364,10 @@
     <string name="screenshot_delete_action">Supprimer</string>
     <string name="screenshot_delete_confirmation">Capture d\'écran supprimé</string>
 
+    <!-- The text for the button in the notification window-shade that clears
+         all of the currently visible notifications. [CHAR LIMIT=10]-->
+    <string name="clear_recents">Fermer les récents</string>
+	
     <!-- Development shortcuts -->
     <string name="advanced_dev_option_wipe_app">Nettoyer les données d\'applications</string>
     <string name="advanced_dev_option_force_stop">Forcer l\'arrêt</string>
@@ -371,4 +375,7 @@
     
     <!-- Content description of the data connection type HSPA+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_data_connection_HP">HSPA+</string>
+
+    <!-- Weather string format in expanded statusbar header -->
+    <string name="status_bar_expanded_header_weather_format"><xliff:g id="temp">%1$s</xliff:g> - <xliff:g id="condition">%2$s</xliff:g></string>
 </resources>
