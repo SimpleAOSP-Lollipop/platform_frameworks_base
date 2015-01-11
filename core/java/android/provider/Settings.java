@@ -3041,6 +3041,12 @@ public final class Settings {
          */
         public static final String NAVIGATION_BAR_HEIGHT = "navigation_bar_height";
 
+        /** Whether to show the brightness slider in quick settings panel.
+         *
+         * @hide
+         */
+        public static final String QS_SHOW_BRIGHTNESS_SLIDER = "qs_show_brightness_slider";
+
         /**
          * Volume keys control cursor in text fields (default is 0)
          * 0 - Disabled
