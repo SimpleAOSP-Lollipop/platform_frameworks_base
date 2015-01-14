@@ -241,11 +241,11 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     private static final int BRIGHTNESS_CONTROL_LONG_PRESS_TIMEOUT = 750; // ms
     private static final int BRIGHTNESS_CONTROL_LINGER_THRESHOLD = 20;
 
-    public static final int FADE_KEYGUARD_START_DELAY = 50;
-    public static final int FADE_KEYGUARD_DURATION = 150;
+    public static final int FADE_KEYGUARD_START_DELAY = 100;
+    public static final int FADE_KEYGUARD_DURATION = 300;
 
     /** Allow some time inbetween the long press for back and recents. */
-    private static final int LOCK_TO_APP_GESTURE_TOLERENCE = 100;
+    private static final int LOCK_TO_APP_GESTURE_TOLERENCE = 200;
 
     PhoneStatusBarPolicy mIconPolicy;
 
@@ -1786,7 +1786,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                 .alpha(makeVisible ? 1f : 0f)
                 //.setStartDelay(makeVisible ? 500 : 0)
                 //.setDuration(makeVisible ? 750 : 100)
-                .setDuration(100)
+                .setDuration(150)
                 .setListener(makeVisible ? null : new AnimatorListenerAdapter() {
                     @Override
                     public void onAnimationEnd(Animator animation) {
@@ -2051,7 +2051,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                                 + mBackdropBack.getDrawable());
                     }
                     mBackdropFront.animate()
-                            .setDuration(150)
+                            .setDuration(250)
                             .alpha(0f).withEndAction(mHideBackdropFront);
                 }
             }
@@ -2227,7 +2227,7 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         }
         v.animate()
                 .alpha(0f)
-                .setDuration(100)
+                .setDuration(160)
                 .setStartDelay(0)
                 .setInterpolator(ALPHA_OUT)
                 .withEndAction(new Runnable() {
@@ -2250,9 +2250,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         }
         v.animate()
                 .alpha(1f)
-                .setDuration(250)
+                .setDuration(320)
                 .setInterpolator(ALPHA_IN)
-                .setStartDelay(15)
+                .setStartDelay(50)
 
                 // We need to clean up any pending end action from animateStatusBarHide if we call
                 // both hide and show in the same frame before the animation actually gets started.
@@ -2511,8 +2511,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
 
     final TimeInterpolator mAccelerateInterpolator = new AccelerateInterpolator();
     final TimeInterpolator mDecelerateInterpolator = new DecelerateInterpolator();
-    final int FLIP_DURATION_OUT = 65;
-    final int FLIP_DURATION_IN = 125;
+    final int FLIP_DURATION_OUT = 125;
+    final int FLIP_DURATION_IN = 225;
     final int FLIP_DURATION = (FLIP_DURATION_IN + FLIP_DURATION_OUT);
 
     Animator mScrollViewAnim, mClearButtonAnim;
