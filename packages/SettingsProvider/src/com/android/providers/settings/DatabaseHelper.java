@@ -75,7 +75,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // database gets upgraded properly. At a minimum, please confirm that 'upgradeVersion'
     // is properly propagated through your change.  Not doing so will result in a loss of user
     // settings.
-    private static final int DATABASE_VERSION = 118;
+    private static final int DATABASE_VERSION = 119;
 
     private Context mContext;
     private int mUserHandle;
@@ -1574,37 +1574,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         if (upgradeVersion == 100) {
             // note: LOCK_SCREEN_SHOW_NOTIFICATIONS now handled in version 106
-            if (mUserHandle == UserHandle.USER_OWNER) {
-                db.beginTransaction();
-                SQLiteStatement stmt = null;
-                try {
-                    stmt = db.compileStatement("INSERT OR REPLACE INTO global(name,value)"
-                            + " VALUES(?,?);");
-                    loadIntegerSetting(stmt, Global.HEADS_UP_NOTIFICATIONS_ENABLED,
-                            R.integer.def_heads_up_enabled);
-                    db.setTransactionSuccessful();
-                } finally {
-                    db.endTransaction();
-                    if (stmt != null) stmt.close();
-                }
-            }
+            upgradeHeadsUpSettingFromNone(db);
             upgradeVersion = 101;
         }
 
         if (upgradeVersion == 101) {
-            if (mUserHandle == UserHandle.USER_OWNER) {
-                db.beginTransaction();
-                SQLiteStatement stmt = null;
-                try {
-                    stmt = db.compileStatement("INSERT OR IGNORE INTO global(name,value)"
-                            + " VALUES(?,?);");
-                    loadSetting(stmt, Settings.Global.DEVICE_NAME, getDefaultDeviceName());
-                    db.setTransactionSuccessful();
-                } finally {
-                    db.endTransaction();
-                    if (stmt != null) stmt.close();
-                }
-            }
+            upgradeDeviceNameFromNone(db);
             upgradeVersion = 102;
         }
 
@@ -1832,13 +1807,38 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             upgradeVersion = 113;
         }
 
+        /************* The following are CM-12.0 changes ************/
+
         if (upgradeVersion < 114) {
-            moveSettingsToNewTable(db, TABLE_SYSTEM, TABLE_SECURE,
-                    new String[] { Settings.Secure.VOLUME_LINK_NOTIFICATION }, true);
+            // Artificially bump our upgrade version to handle
+            // migration path from cm-11.0 to cm-12.0
+            // without this, heads up would never work if
+            // a user did not wipe data
+            upgradeHeadsUpSettingFromNone(db);
+            upgradeDeviceNameFromNone(db);
+
+            // Removal of back/recents is no longer supported
+            // due to pinned apps
+            db.beginTransaction();
+            try {
+                db.execSQL("DELETE FROM system WHERE name='"
+                        + Settings.System.NAV_BUTTONS + "'");
+                db.setTransactionSuccessful();
+            } finally {
+                db.endTransaction();
+            }
+
             upgradeVersion = 114;
         }
 
         if (upgradeVersion < 115) {
+            moveSettingsToNewTable(db, TABLE_SYSTEM, TABLE_SECURE,
+                    new String[] { Settings.Secure.VOLUME_LINK_NOTIFICATION }, true);
+
+            upgradeVersion = 115;
+        }
+
+        if (upgradeVersion < 116) {
             // CM11 used "holo" as a system default theme. For CM12 and up its been
             // switched to "system". So change all "holo" references in themeConfig to "system"
             final String NAME_THEME_CONFIG = "themeConfig";
@@ -1869,10 +1869,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             } finally {
                 if (c != null) c.close();
             }
-            upgradeVersion = 115;
+            upgradeVersion = 116;
         }
 
-        if (upgradeVersion < 116) {
+        if (upgradeVersion < 117) {
             String[] qsTiles = new String[] {
                     Settings.Secure.QS_TILES,
                     Settings.Secure.QS_USE_MAIN_TILES
@@ -1880,20 +1880,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
             moveSettingsToNewTable(db, TABLE_SYSTEM, TABLE_SECURE,
                     qsTiles, true);
-            upgradeVersion = 116;
+            upgradeVersion = 117;
         }
 
-        if (upgradeVersion < 117) {
+        if (upgradeVersion < 118) {
             String[] settingsToMove = new String[] {
                     Settings.Secure.QS_SHOW_BRIGHTNESS_SLIDER,
             };
 
             moveSettingsToNewTable(db, TABLE_SYSTEM, TABLE_SECURE,
                     settingsToMove, true);
-            upgradeVersion = 117;
+            upgradeVersion = 118;
         }
 
-        if (upgradeVersion == 117) {
+        if (upgradeVersion == 118) {
             db.beginTransaction();
             SQLiteStatement stmt = null;
             try {
@@ -1904,7 +1904,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 db.endTransaction();
                 if (stmt != null) stmt.close();
             }
-            upgradeVersion = 118;
+            upgradeVersion = 119;
         }
 
         // *** Remember to update DATABASE_VERSION above!
@@ -2068,6 +2068,39 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             }
         } else {
             c.close();
+        }
+    }
+
+    private void upgradeHeadsUpSettingFromNone(SQLiteDatabase db) {
+        if (mUserHandle == UserHandle.USER_OWNER) {
+            db.beginTransaction();
+            SQLiteStatement stmt = null;
+            try {
+                stmt = db.compileStatement("INSERT OR REPLACE INTO global(name,value)"
+                        + " VALUES(?,?);");
+                loadIntegerSetting(stmt, Global.HEADS_UP_NOTIFICATIONS_ENABLED,
+                        R.integer.def_heads_up_enabled);
+                db.setTransactionSuccessful();
+            } finally {
+                db.endTransaction();
+                if (stmt != null) stmt.close();
+            }
+        }
+    }
+
+    private void upgradeDeviceNameFromNone(SQLiteDatabase db) {
+        if (mUserHandle == UserHandle.USER_OWNER) {
+            db.beginTransaction();
+            SQLiteStatement stmt = null;
+            try {
+                stmt = db.compileStatement("INSERT OR IGNORE INTO global(name,value)"
+                        + " VALUES(?,?);");
+                loadSetting(stmt, Settings.Global.DEVICE_NAME, getDefaultDeviceName());
+                db.setTransactionSuccessful();
+            } finally {
+                db.endTransaction();
+                if (stmt != null) stmt.close();
+            }
         }
     }
 
