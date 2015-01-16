@@ -225,12 +225,8 @@ public abstract class OverlayBaseTest extends AndroidTestCase {
             reader = new BufferedReader(new InputStreamReader(input));
             actual = reader.readLine();
         } finally {
-            if (reader != null) {
-                reader.close();
-            }
-            if (input != null) {
-                input.close();
-            }
+            reader.close();
+            input.close();
         }
 
         final String no = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, " +
