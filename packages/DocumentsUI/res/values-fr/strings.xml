@@ -67,8 +67,8 @@
 
     <!-- Text shown in a toast when the user copies files -->
     <plurals name="files_copied">
-        <item quantity="one">Le fichier a été mis dans le presse-papiers</item>
-        <item quantity="other">%d fichiers ont été mis dans le presse-papiers</item>
+        <item quantity="one">Le fichier a été mis dans le presse-papier</item>
+        <item quantity="other">%d fichiers ont été mis dans le presse-papier</item>
     </plurals>
 
     <!-- Text shown in a toast when the user pastes files -->

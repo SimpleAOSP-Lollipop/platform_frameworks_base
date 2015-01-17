@@ -27,8 +27,8 @@
         <item>utilisation du vibreur</item>
         <item>lire les contacts</item>
         <item>modifier des contacts</item>
-        <item>lire le journal d\'appels</item>
-        <item>modifier le journal d\'appels</item>
+        <item>lire le journal d\'appel</item>
+        <item>modifier le journal d\'appel</item>
         <item>lire le calendrier</item>
         <item>modifier le calendrier</item>
         <item>accès à la localisation</item>
@@ -79,7 +79,7 @@
         <item>supprimer des SMS</item>
         <item>supprimer des MMS</item>
         <item>supprimer des contacts</item>
-        <item>supprimer le journal d\'appels</item>
+        <item>supprimer le journal d\'appel</item>
         <item>allumer les données mobiles</item>
         <item>lire les autres comptes</item>
         <item>lire les informations du téléphone</item>

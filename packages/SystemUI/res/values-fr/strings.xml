@@ -366,7 +366,7 @@
 
     <!-- The text for the button in the notification window-shade that clears
          all of the currently visible notifications. [CHAR LIMIT=10]-->
-    <string name="clear_recents">Fermer les récents</string>
+    <string name="clear_recents">Fermer tout les récents</string>
 	
     <!-- Development shortcuts -->
     <string name="advanced_dev_option_wipe_app">Nettoyer les données d\'applications</string>
@@ -381,9 +381,9 @@
 	
     <!-- QS location sensors -->
     <!-- Content description of the location tile in quick settings when on, battery saving mode (not shown on the screen). [CHAR LIMIT=NONE] -->
-    <string name="accessibility_quick_settings_location_battery_saving">Information de localisation : mode économiseur de batterie</string>
+    <string name="accessibility_quick_settings_location_battery_saving">Information de localisation : mode économiseur de batterie.</string>
     <!-- Content description of the location tile in quick settings when on, sensors only mode (not shown on the screen). [CHAR LIMIT=NONE] -->
-    <string name="accessibility_quick_settings_location_gps_only">Information de localisation : mode capteur seul</string>
+    <string name="accessibility_quick_settings_location_gps_only">Information de localisation : mode capteur seul.</string>
     <!-- Content description of the location tile in quick settings when on, high accuracy mode (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_quick_settings_location_high_accuracy">Information de localisation : mode haute précision.</string>
 
