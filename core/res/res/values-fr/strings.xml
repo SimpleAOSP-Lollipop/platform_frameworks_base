@@ -1818,7 +1818,7 @@
     <!-- Button to reboot the phone into bootloader, within the Reboot Options dialog -->
     <string name="reboot_bootloader">Bootloader</string>
     <!-- Button to soft reboot the device, within the Reboot Options dialog -->
-    <string name="reboot_soft">redémarrage logiciel</string>
+    <string name="reboot_soft">Redémarrage logiciel</string>
 
     <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permgrouplab_security">Sécurité</string>
