@@ -58,6 +58,13 @@ public class RotationLockTile extends QSTile<QSTile.BooleanState> {
     }
 
     @Override
+    protected void handleSecondaryClick() {
+        intent.setClassName("com.android.settings",
+				"com.android.settings.Settings$DisplayRotationSettingsActivity");
+        mHost.startSettingsActivity(intent);
+    }
+
+    @Override
     protected void handleLongClick() {
 	intent.setClassName("com.android.settings",
 				"com.android.settings.Settings$DisplayRotationSettingsActivity");
