@@ -431,7 +431,7 @@ public class QSPanel extends ViewGroup {
                 tileRecord.tileView.setVisibility(newVis);
             }
         }
-        mBrightnessView.setVisibility(showBrightnessSlider() ? VISIBLE : GONE);
+        mBrightnessView.setVisibility(showBrightnessSlider() ? newVis : GONE);
         mGridContentVisible = visible;
     }
 
