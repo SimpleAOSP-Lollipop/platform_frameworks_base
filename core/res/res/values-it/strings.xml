@@ -1804,4 +1804,48 @@
     <string name="permdesc_setKeyguardWallpaper">Consente all\'app di cambiare lo sfondo della lockscreen</string>
     <string name="permlab_changeHeadsUpState">attiva o disattiva heads up</string>
     <string name="permdesc_changeHeadsUpState">Consente all\'app di cambiare se un\'altra applicazione ha il permesso di mandare le notifiche come notifiche heads up.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">accesso servizio temi</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Consente ad una app di accedere al servizio temi. Non dovrebbe mai essere necessario per le normali applicazioni.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">leggi informazioni tema</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Consente ad una app di leggere i vostri temi e determinare quale tema è stato applicato.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">modifica i tuoi temi</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Consente ad una app di inserire nuovi temi e modificare il tema applicato.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneBlacklist">leggi blacklist telefono</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneBlacklist">Consente ad una app di leggere le informazioni sui numeri di telefono che sono bloccati per chiamate o messaggi.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_changePhoneBlacklist">cambia blacklist telefono</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_changePhoneBlacklist">Consente ad una app di modificare i numeri di telefono che sono bloccati per chiamate o messaggi.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want the application to do this. -->
+    <string name="permlab_setKeyguardWallpaper">cambia lo sfondo della lockscreen</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_setKeyguardWallpaper">Consente ad una app di cambiare lo sfondo della lockscreen.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_recordScreen">Visualizza contenuto registrato</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_recordScreen">Consente ad una applicazione di registrare lo schermo degli utenti</string>
+
+    <!-- label for screen record item in phone options dialog -->
+    <string name="global_action_screen_record">Registra schermo</string>
+  
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Installazione tema fallita</string>
+    <string name="theme_install_error_message">%s impossibile installare</string>
+    
 </resources>
