@@ -1574,9 +1574,6 @@ Para liberar a tela, toque e mantenha pressionado \"Visão geral\"."</string>
 A economia de bateria é desativada automaticamente quando o dispositivo estiver carregando."</string>
     <string name="downtime_condition_summary">Até o período de inatividade terminar às %1$s</string>
     <string name="zen_mode_forever">Indefinidamente</string>
-    <string name="permission_remember_choice">Lembrar</string>
-    <string name="permission">Pedir permissão</string>
-    <string name="permission_dialog_text">%1$s gostaria de %2$s</string>
     <string name="app_killed_message">Aplicação fechada</string>
     <string name="reboot_title">Reiniciar</string>
     <string name="reboot_confirm">O seu telefone será reiniciado.</string>
