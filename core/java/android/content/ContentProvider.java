@@ -1,7 +1,4 @@
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
- * Not a Contribution.
- *
  * Copyright (C) 2006 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -304,7 +301,7 @@ public abstract class ContentProvider implements ComponentCallbacks2 {
         public int delete(String callingPkg, Uri uri, String selection, String[] selectionArgs) {
             validateIncomingUri(uri);
             uri = getUriWithoutUserId(uri);
-            if (enforceDeletePermission(callingPkg, uri) != AppOpsManager.MODE_ALLOWED) {
+            if (enforceWritePermission(callingPkg, uri) != AppOpsManager.MODE_ALLOWED) {
                 return 0;
             }
             final String original = setCallingPackage(callingPkg);
@@ -457,31 +454,6 @@ public abstract class ContentProvider implements ComponentCallbacks2 {
             enforceWritePermissionInner(uri);
             if (mWriteOp != AppOpsManager.OP_NONE) {
                 return mAppOpsManager.noteOp(mWriteOp, Binder.getCallingUid(), callingPkg);
-            }
-            return AppOpsManager.MODE_ALLOWED;
-        }
-
-        private int enforceDeletePermission(String callingPkg, Uri uri) throws SecurityException {
-            enforceWritePermissionInner(uri);
-            if (mWriteOp != AppOpsManager.OP_NONE) {
-                int op = mWriteOp;
-                switch (mWriteOp) {
-                case AppOpsManager.OP_WRITE_SMS:
-                    op = AppOpsManager.OP_DELETE_SMS;
-                    break;
-                case AppOpsManager.OP_WRITE_MMS:
-                    op = AppOpsManager.OP_DELETE_MMS;
-                    break;
-                case AppOpsManager.OP_WRITE_CONTACTS:
-                    op = AppOpsManager.OP_DELETE_CONTACTS;
-                    break;
-                case AppOpsManager.OP_WRITE_CALL_LOG:
-                    op = AppOpsManager.OP_DELETE_CALL_LOG;
-                    break;
-                default:
-                    break;
-                }
-                return mAppOpsManager.noteOp(op, Binder.getCallingUid(), callingPkg);
             }
             return AppOpsManager.MODE_ALLOWED;
         }

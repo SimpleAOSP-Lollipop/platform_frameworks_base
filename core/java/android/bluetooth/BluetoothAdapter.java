@@ -1,7 +1,4 @@
 /*
- * Copyright (c) 2013-2014, The Linux Foundation. All rights reserved.
- * Not a Contribution.
- *
  * Copyright (C) 2009-2014 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
@@ -21,7 +18,6 @@ package android.bluetooth;
 
 import android.annotation.SdkConstant;
 import android.annotation.SdkConstant.SdkConstantType;
-import android.app.ActivityThread;
 import android.bluetooth.le.BluetoothLeAdvertiser;
 import android.bluetooth.le.BluetoothLeScanner;
 import android.bluetooth.le.ScanCallback;
@@ -574,7 +570,7 @@ public final class BluetoothAdapter {
             return true;
         }
         try {
-            return mManagerService.enable(ActivityThread.currentPackageName());
+            return mManagerService.enable();
         } catch (RemoteException e) {Log.e(TAG, "", e);}
         return false;
     }
