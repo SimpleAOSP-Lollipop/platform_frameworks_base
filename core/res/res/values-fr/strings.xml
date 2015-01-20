@@ -1046,7 +1046,7 @@
     <string name="open_permission_deny" msgid="7374036708316629800">"Vous n\'êtes pas autorisé à ouvrir cette page."</string>
     <string name="text_copied" msgid="4985729524670131385">"Le texte a été copié dans le presse-papier."</string>
     <string name="more_item_label" msgid="4650918923083320495">"Plus"</string>
-    <string name="prepend_shortcut_label" msgid="2572214461676015642">"Menu+"</string>
+    <string name="prepend_shortcut_label" msgid="2572214461676015642">"Menu"</string>
     <string name="menu_space_shortcut_label" msgid="2410328639272162537">"espace"</string>
     <string name="menu_enter_shortcut_label" msgid="2743362785111309668">"entrée"</string>
     <string name="menu_delete_shortcut_label" msgid="3658178007202748164">"supprimer"</string>
@@ -1824,6 +1824,22 @@
     <string name="permgrouplab_security">Sécurité</string>
     <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permgroupdesc_security">Permissions relatives à l\'information de sécurité de l\'appareil.</string>
+	
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">service d\'accès du thème</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Permet à une application d\'accéder au service du thème. Il ne devrait jamais être nécessaire pour les applications normales.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">lire les informations du thème</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Permet à l\'application de lire vos thèmes et de déterminer quel thème est appliqué.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">modifier vos thèmes</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Permet à l\'application d\'installer de nouveaux thèmes et de modifier le thème qui est appliqué.</string>
+
 
     <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_readPhoneBlacklist">Lire la liste noire téléphonique</string>
@@ -1848,4 +1864,8 @@
 
     <!-- label for screen record item in phone options dialog -->
     <string name="global_action_screen_record">Enregistrement d\'écran</string>
+	
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Échec de l\'installation du thème</string>
+    <string name="theme_install_error_message">%s échec à l\'installation</string>
 </resources>
