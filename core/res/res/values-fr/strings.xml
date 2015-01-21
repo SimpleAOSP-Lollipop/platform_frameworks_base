@@ -1821,7 +1821,7 @@
     <string name="permgroupdesc_security">Permissions relatives à l\'information de sécurité de l\'appareil.</string>
 	
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <string name="permlab_accessThemeService">service d\'accès du thème</string>
+    <string name="permlab_accessThemeService">Accéder au service thème</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_accessThemeService">Permet à une application d\'accéder au service du thème. Il ne devrait jamais être nécessaire pour les applications normales.</string>
 
@@ -1861,6 +1861,6 @@
     <string name="global_action_screen_record">Enregistrement d\'écran</string>
 	
     <!-- Theme installation error notification -->
-    <string name="theme_install_error_title">Échec de l\'installation du thème</string>
-    <string name="theme_install_error_message">%s échec à l\'installation</string>
+    <string name="theme_install_error_title">Échec lors de l\'installation du thème</string>
+    <string name="theme_install_error_message">%s n\'a pas pu être installé</string>
 </resources>
