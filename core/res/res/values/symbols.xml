@@ -2139,4 +2139,8 @@
   <java-symbol type="drawable" name="stat_notify_privacy_guard_off_plus" />
   <java-symbol type="drawable" name="stat_notify_privacy_guard_custom_plus" />
   <java-symbol type="drawable" name="stat_notify_privacy_guard_custom_plus_light" />
+
+  <!-- Theme reset notification -->
+  <java-symbol type="string" name="theme_reset_notification_title" />
+  <java-symbol type="string" name="theme_reset_notification_body" />
 </resources>

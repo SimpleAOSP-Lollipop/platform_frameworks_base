@@ -4976,4 +4976,8 @@
     <string name="privacy_guard_notification">Privacy guard active</string>
     <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> will not be able to access personal data</string>
     <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> will not be able to access custom permissions</string>
+    
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Theme reset</string>
+    <string name="theme_reset_notification_body">System theme restored due to multiple app crashes</string>
 </resources>
