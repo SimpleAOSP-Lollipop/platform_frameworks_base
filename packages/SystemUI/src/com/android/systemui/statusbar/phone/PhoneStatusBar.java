@@ -448,9 +448,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                             R.integer.heads_up_notification_decay),
                             UserHandle.USER_CURRENT);
                     resetHeadsUpDecayTimer();
-                }
-                update();
             }
+            update();
         }
 
         public void update() {
@@ -471,9 +470,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
                 mNavigationBarView.updateResources(getNavbarThemedResources());
             }
         }
+    }
 
-        void updateClockView() {
-            mClockView.setVisibility(View.GONE);
+    void updateClockView() {
+        mClockView.setVisibility(View.GONE);
 
         switch (mClockLocation) {
             default:
