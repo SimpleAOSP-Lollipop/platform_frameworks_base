@@ -410,4 +410,20 @@
     <string name="quick_settings_location_detail_mode_battery_saving_description">utiliser le WI-FI et les réseaux mobiles pour déterminer la position</string>
     <!-- [CHAR LIMIT=130] Location detail panel, description for sensors only mode -->
     <string name="quick_settings_location_detail_mode_sensors_only_description">Utiliser le GPS pour déterminer la position</string>
+
+    <!-- NFC qs tile -->
+    <string name="quick_settings_nfc">NFC</string>
+    <string name="quick_settings_nfc_off">NFC éteint</string>
+    
+    <!-- Compass qs tile -->
+    <string name="quick_settings_compass_off">Boussole éteinte</string>
+    <string name="quick_settings_compass_init">Initialisation\u2026</string>
+
+    <!-- Lockscreen qs tile -->
+    <string name="quick_settings_lockscreen">Écran de verrouillage</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="left_shortcut_hint">Glisser vers la droite pour %1$s</string>
+    <string name="right_shortcut_hint">Glisser vers la gauche pour %1$s</string>
+
 </resources>
