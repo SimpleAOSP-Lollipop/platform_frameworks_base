@@ -36,6 +36,7 @@ public class QSConstants {
     public static final String TILE_COMPASS = "compass";
     public static final String TILE_LOCKSCREEN = "lockscreen";
     public static final String TILE_LTE = "lte";
+    public static final String TILE_SCREEN_TIMEOUT = "screen_timeout";
     public static final String TILE_HEADS_UP = "toggleHeadsUp";
 
     // Order matters
@@ -63,6 +64,7 @@ public class QSConstants {
         TILES_AVAILABLE.add(TILE_COMPASS);
         TILES_AVAILABLE.add(TILE_LOCKSCREEN);
         TILES_AVAILABLE.add(TILE_LTE);
+        TILES_AVAILABLE.add(TILE_SCREEN_TIMEOUT);
 	TILES_AVAILABLE.add(TILE_HEADS_UP);
     }
 }
