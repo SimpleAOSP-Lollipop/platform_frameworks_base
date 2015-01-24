@@ -515,6 +515,8 @@
     <dimen name="net_traffic_multi_text_size">8dp</dimen>
 
     <dimen name="weather_text_size">12sp</dimen>
+    <dimen name="detail_radio_group_padding_left">16dp</dimen>
+    <dimen name="detail_radio_group_padding">8dp</dimen>
 
     <!-- Floating action button -->
     <dimen name="floating_action_button_height">54dp</dimen>
