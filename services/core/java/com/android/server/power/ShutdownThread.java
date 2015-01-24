@@ -124,7 +124,7 @@ public final class ShutdownThread extends Thread {
             Settings.Secure.ADVANCED_REBOOT, 1) == 1;
         boolean isPrimaryUser = UserHandle.getCallingUserId() == UserHandle.USER_OWNER;
 
-        return advancedRebootEnabled && !keyguardLocked && isPrimaryUser;
+        return advancedRebootEnabled && !mRebootSafeMode && !keyguardLocked && isPrimaryUser;
     }
 
     static void shutdownInner(final Context context, boolean confirm) {
