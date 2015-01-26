@@ -1870,4 +1870,9 @@
     <string name="privacy_guard_notification">Privacy Guard activé</string>
     <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> ne pourra pas accéder à vos données personnelles.</string>
     <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> ne pourra pas accéder aux permissions qui lui sont refusées.</string>
+
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Réinitialisation du thème</string>
+    <string name="theme_reset_notification_body">Le thème système est restauré en raison de multiples plantages d'applications</string>
+	
 </resources>
