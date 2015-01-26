@@ -421,6 +421,10 @@
 
     <!-- Lockscreen qs tile -->
     <string name="quick_settings_lockscreen">Écran de verrouillage</string>
+    
+    <!-- Timeout tile -->
+    <string name="quick_settings_screen_timeout">Temporisation</string>
+    <string name="quick_settings_screen_timeout_summary">%1$d %2$s</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="left_shortcut_hint">Glisser vers la droite pour %1$s</string>
