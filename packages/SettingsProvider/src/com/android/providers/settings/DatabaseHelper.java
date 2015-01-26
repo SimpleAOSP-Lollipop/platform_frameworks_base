@@ -1851,7 +1851,22 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
             moveSettingsToNewTable(db, TABLE_SYSTEM, TABLE_SECURE,
                     settingsToMove, true);
-            upgradeVersion = 116;
+
+            upgradeVersion = 117;
+        }
+
+        if (upgradeVersion == 117) {
+            db.beginTransaction();
+            SQLiteStatement stmt = null;
+            try {
+                stmt = db.compileStatement("INSERT OR IGNORE INTO secure(name,value) VALUES(?,?);");
+                loadDefaultThemeSettings(stmt);
+                db.setTransactionSuccessful();
+            } finally {
+                db.endTransaction();
+                if (stmt != null) stmt.close();
+            }
+            upgradeVersion = 118;
         }
 
         // *** Remember to update DATABASE_VERSION above!
