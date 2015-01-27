@@ -266,6 +266,14 @@ public class NetworkControllerImpl extends BroadcastReceiver
         });
     }
 
+    private boolean showActivityIcons() {
+        boolean shouldShowActivityIcons = Settings.System.getInt(mContext
+            .getContentResolver(), Settings.System.STATUS_BAR_SHOW_DATA_ACTIVITY, 0) == 1;
+        updateDataIcon();
+        updateWifiIcons();
+        return shouldShowActivityIcons;
+    }
+
     private void notifyMobileDataEnabled(boolean enabled) {
         for (NetworkSignalChangedCallback cb : mSignalsChangedCallbacks) {
             cb.onMobileDataEnabled(enabled);
@@ -1193,23 +1201,25 @@ public class NetworkControllerImpl extends BroadcastReceiver
                 combinedLabel = mobileLabel;
                 combinedSignalIconId = mDataSignalIconId; // set by updateDataIcon()
                 mContentDescriptionCombinedSignal = mContentDescriptionDataType;
-                switch (mDataActivity) {
-                case TelephonyManager.DATA_ACTIVITY_IN:
-                    mMobileActivityIconId = R.drawable.stat_sys_signal_in;
-                    break;
-                case TelephonyManager.DATA_ACTIVITY_OUT:
-                    mMobileActivityIconId = R.drawable.stat_sys_signal_out;
-                    break;
-                case TelephonyManager.DATA_ACTIVITY_INOUT:
-                    mMobileActivityIconId = R.drawable.stat_sys_signal_inout;
-                    break;
-                default:
+                if (showActivityIcons()) {
+                    switch (mDataActivity) {
+                    case TelephonyManager.DATA_ACTIVITY_IN:
+                        mMobileActivityIconId = R.drawable.stat_sys_signal_in;
+                        break;
+                    case TelephonyManager.DATA_ACTIVITY_OUT:
+                        mMobileActivityIconId = R.drawable.stat_sys_signal_out;
+                        break;
+                    case TelephonyManager.DATA_ACTIVITY_INOUT:
+                        mMobileActivityIconId = R.drawable.stat_sys_signal_inout;
+                        break;
+                    default:
+                        mMobileActivityIconId = 0;
+                        break;
+                    }
+                    combinedActivityIconId = mMobileActivityIconId;
+                } else {
                     mMobileActivityIconId = 0;
-                    break;
                 }
-                combinedActivityIconId = mMobileActivityIconId;
-            } else {
-                mMobileActivityIconId = 0;
             }
         }
 
@@ -1222,19 +1232,21 @@ public class NetworkControllerImpl extends BroadcastReceiver
                 if (DEBUG) {
                     wifiLabel += "xxxxXXXXxxxxXXXX";
                 }
-                switch (mWifiActivity) {
-                case WifiManager.DATA_ACTIVITY_IN:
-                    mWifiActivityIconId = R.drawable.stat_sys_signal_in;
-                    break;
-                case WifiManager.DATA_ACTIVITY_OUT:
-                    mWifiActivityIconId = R.drawable.stat_sys_signal_out;
-                    break;
-                case WifiManager.DATA_ACTIVITY_INOUT:
-                    mWifiActivityIconId = R.drawable.stat_sys_signal_inout;
-                    break;
-                case WifiManager.DATA_ACTIVITY_NONE:
-                    mWifiActivityIconId = R.drawable.stat_sys_signal_none;
-                    break;
+                if (showActivityIcons()) {
+                    switch (mWifiActivity) {
+                    case WifiManager.DATA_ACTIVITY_IN:
+                        mWifiActivityIconId = R.drawable.stat_sys_signal_in;
+                        break;
+                    case WifiManager.DATA_ACTIVITY_OUT:
+                        mWifiActivityIconId = R.drawable.stat_sys_signal_out;
+                        break;
+                    case WifiManager.DATA_ACTIVITY_INOUT:
+                        mWifiActivityIconId = R.drawable.stat_sys_signal_inout;
+                        break;
+                    case WifiManager.DATA_ACTIVITY_NONE:
+                        mWifiActivityIconId = R.drawable.stat_sys_signal_none;
+                        break;
+                    }
                 }
             }
 
