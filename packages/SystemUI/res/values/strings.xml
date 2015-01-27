@@ -967,6 +967,9 @@
     <!-- LTE qs tile -->
     <string name="quick_settings_lte_tile_title">LTE</string>
 
+    <string name="quick_settings_heads_up_on">Heads up enabled</string>
+    <string name="quick_settings_heads_up_off">No interruptions</string>
+
     <!-- Lockscreen shortcuts -->
     <string name="left_shortcut_hint">Swipe right for %1$s</string>
     <string name="right_shortcut_hint">Swipe left for %1$s</string>
