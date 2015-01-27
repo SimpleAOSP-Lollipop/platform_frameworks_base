@@ -960,9 +960,12 @@
     <!-- Lockscreen qs tile -->
     <string name="quick_settings_lockscreen_label">Lock screen</string>
 
-    <!-- Timeout tile -->
+    <!-- Timeout qs tile -->
     <string name="quick_settings_screen_timeout">Timeout</string>
     <string name="quick_settings_screen_timeout_summary">%1$d %2$s</string>
+
+    <!-- LTE qs tile -->
+    <string name="quick_settings_lte_tile_title">LTE</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="left_shortcut_hint">Swipe right for %1$s</string>
