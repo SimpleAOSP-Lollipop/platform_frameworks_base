@@ -1783,4 +1783,95 @@
     <item quantity="other" msgid="5408537517529822157">"Por %d horas"</item>
   </plurals>
     <string name="zen_mode_forever" msgid="4316804956488785559">"Indefinidamente"</string>
+
+    <!-- kill app long press back -->
+    <string name="app_killed_message">Aplicação fechada</string>
+
+    <!-- Title of dialog to confirm rebooting. -->
+    <string name="reboot_title">Reiniciar</string>
+
+    <!-- Reboot Confirmation Dialog.  When the user chooses to reboot the device, there will
+         be a confirmation dialog.  This is the message. -->
+    <string name="reboot_confirm" product="tablet">O seu tablet será reiniciado.</string>
+    <string name="reboot_confirm" product="default">O seu telefone será reiniciado.</string>
+
+    <!-- label for item that reboots the phone in phone options dialog -->
+    <string name="global_action_reboot">Reiniciar</string>
+
+    <!-- label for item that screenshots in phone options dialog -->
+    <string name="global_action_screenshot">Screenshot</string>
+
+    <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
+    <string name="reboot_progress">Reiniciando\u2026</string>
+
+    <!-- Reboot menu -->
+    <!-- Button to reboot the phone, within the Reboot Options dialog -->
+    <string name="reboot_reboot">Reiniciar</string>
+    <!-- Button to reboot the phone into recovery, within the Reboot Options dialog -->
+    <string name="reboot_recovery">Recuperação</string>
+    <!-- Button to reboot the phone into bootloader, within the Reboot Options dialog -->
+    <string name="reboot_bootloader">Bootloader</string>
+    <!-- Button to soft reboot the device, within the Reboot Options dialog -->
+    <string name="reboot_soft">Reinicializar</string>
+
+    <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_security">Segurança</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_security">Permissões relacionadas a informações de segurança do dispositivo.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">Acesso ao serviço de tema</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Permite que um aplicativo acesse o serviço de tema. Nunca deve ser necessário para aplicativos normais.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">Ler informação de seu tema</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Permite ao aplicativo ler seus temas e
+        determinar qual o tema que você aplicou.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">Modificar seus temas</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Permite ao aplicativo inserir novos temas e
+        modificar o tema que você aplicou.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneBlacklist">Ler lista negra do telefone</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneBlacklist">Permite ao aplicativo ler informações sobre números de telefone que são bloqueados para receber chamadas ou mensagens.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_changePhoneBlacklist">Mudar telefone na lista negra</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_changePhoneBlacklist">Permite que um aplicativo faça alteração nos números de telefone que são bloqueados para receber chamadas ou mensagens.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want the application to do this. -->
+    <string name="permlab_setKeyguardWallpaper">Ajustar proteção do Wallpaper/Teclado</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_setKeyguardWallpaper">Permite que um aplicativo mude o papel de parede da tela de bloqueio.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_recordScreen">Gravar conteúdo exibido</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_recordScreen">Permite ao aplicativo gravar a tela dos usuários</string>
+
+    <!-- label for screen record item in phone options dialog -->
+    <string name="global_action_screen_record">Gravar tela</string>
+  
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Falha ao instalar tema</string>
+    <string name="theme_install_error_message">%s falhou ao instalar</string>
+
+    <!-- Privacy Guard -->
+    <string name="permlab_changePrivacyGuardState">Ativar ou desativar proteção de privacidade</string>
+    <string name="permdesc_changePrivacyGuardState">Permite ao aplicativo alterar se outro aplicativo é executado com proteção de privacidade. Quando um aplicativo está sendo executado com proteção de privacidade, ele não terá acesso aos dados pessoais, como contatos, registros de chamadas ou mensagens.</string>
+    <string name="privacy_guard_notification">Proteção de privacidade ativada</string>
+    <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> não será capaz de acessar dados pessoais</string>
+    <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> não será capaz de acessar as permissões personalizadas</string>
+    
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Redefinição de tema</string>
+    <string name="theme_reset_notification_body">Tema do sistema redefinido devido a várias falhas do aplicativo</string>
 </resources>
