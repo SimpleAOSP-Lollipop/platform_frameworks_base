@@ -2140,14 +2140,6 @@
   <java-symbol type="drawable" name="stat_notify_privacy_guard_custom_plus" />
   <java-symbol type="drawable" name="stat_notify_privacy_guard_custom_plus_light" />
 
-  <!-- Screen Timeout -->
-  <java-symbol type="string" name="hour" />
-  <java-symbol type="string" name="hours" />
-  <java-symbol type="string" name="minute" />
-  <java-symbol type="string" name="minutes" />
-  <java-symbol type="string" name="second" />
-  <java-symbol type="string" name="seconds" />
-
   <!-- Theme reset notification -->
   <java-symbol type="string" name="theme_reset_notification_title" />
   <java-symbol type="string" name="theme_reset_notification_body" />

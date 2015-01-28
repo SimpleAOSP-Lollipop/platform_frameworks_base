@@ -46,7 +46,6 @@ import com.android.systemui.qs.tiles.LockscreenToggleTile;
 import com.android.systemui.qs.tiles.LteTile;
 import com.android.systemui.qs.tiles.NotificationsTile;
 import com.android.systemui.qs.tiles.RotationLockTile;
-import com.android.systemui.qs.tiles.ScreenTimeoutTile;
 import com.android.systemui.qs.tiles.HeadsupTile;
 import com.android.systemui.qs.tiles.WifiTile;
 import com.android.systemui.settings.CurrentUserTracker;
@@ -294,8 +293,6 @@ public class QSTileHost implements QSTile.Host {
                 return new LockscreenToggleTile(this);
             case QSConstants.TILE_LTE:
                 return new LteTile(this);
-	    case QSConstants.TILE_SCREEN_TIMEOUT:
-		return new ScreenTimeoutTile(this);
 	    case QSConstants.TILE_HEADS_UP:
 		return new HeadsupTile(this);
             default:
