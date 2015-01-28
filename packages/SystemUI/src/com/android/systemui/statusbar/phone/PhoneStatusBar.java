@@ -1382,6 +1382,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
     }
 
     private void addHeadsUpView() {
+        if (mHeadsUpNotificationView != null && mHeadsUpNotificationView.isAttachedToWindow()) {
+            return;
+        }
+
         int headsUpHeight = mContext.getResources()
                 .getDimensionPixelSize(R.dimen.heads_up_window_height);
         WindowManager.LayoutParams lp = new WindowManager.LayoutParams(
@@ -3485,7 +3489,9 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         EventLog.writeEvent(EventLogTags.SYSUI_HEADS_UP_STATUS,
                 vis ? mHeadsUpNotificationView.getKey() : "",
                 vis ? 1 : 0);
-        mHeadsUpNotificationView.setVisibility(vis ? View.VISIBLE : View.GONE);
+        if (mHeadsUpNotificationView != null && mHeadsUpNotificationView.isAttachedToWindow()) {
+            mHeadsUpNotificationView.setVisibility(vis ? View.VISIBLE : View.GONE);
+        }
     }
 
     public void onHeadsUpDismissed(boolean direction) {
