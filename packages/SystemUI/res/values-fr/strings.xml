@@ -410,6 +410,7 @@
     <!-- LTE qs tile -->
     <string name="quick_settings_lte_tile_title">LTE</string>
     
+    <!-- Heads up tile -->
     <string name="quick_settings_heads_up_on">Notifications flottantes activées</string>
     <string name="quick_settings_heads_up_off">Notifications flottantes desactivées</string>
 
