@@ -406,10 +406,6 @@
 
     <!-- Lockscreen qs tile -->
     <string name="quick_settings_lockscreen_label">Écran de verrouillage</string>
-    
-    <!-- Timeout qs tile -->
-    <string name="quick_settings_screen_timeout">Temporisation</string>
-    <string name="quick_settings_screen_timeout_summary">%1$d %2$s</string>
 	
     <!-- LTE qs tile -->
     <string name="quick_settings_lte_tile_title">LTE</string>
