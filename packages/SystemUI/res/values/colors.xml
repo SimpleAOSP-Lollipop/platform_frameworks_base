@@ -157,5 +157,9 @@
     <color name="exposed_qs_user_detail_name">#66ffffff</color>
     <color name="exposed_headsup_scrim_start">#55000000</color>
     <color name="exposed_headsup_scrim_end">#00000000</color>
-    
+   
+    <!-- Navigation ring shortcuts -->
+    <color name="navring_check_tint">@android:color/white</color>
+    <color name="navring_edit_fill">#FF558B2F</color>
+    <color name="navring_edit_tint">#FF689F38</color>
 </resources>
