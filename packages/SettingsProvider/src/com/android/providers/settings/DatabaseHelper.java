@@ -1855,20 +1855,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             upgradeVersion = 117;
         }
 
-        if (upgradeVersion == 117) {
-            db.beginTransaction();
-            SQLiteStatement stmt = null;
-            try {
-                stmt = db.compileStatement("INSERT OR IGNORE INTO secure(name,value) VALUES(?,?);");
-                loadDefaultThemeSettings(stmt);
-                db.setTransactionSuccessful();
-            } finally {
-                db.endTransaction();
-                if (stmt != null) stmt.close();
-            }
-            upgradeVersion = 118;
-        }
-
         // *** Remember to update DATABASE_VERSION above!
 
         if (upgradeVersion != currentVersion) {
