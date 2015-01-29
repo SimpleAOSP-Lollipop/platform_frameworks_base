@@ -1852,7 +1852,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             moveSettingsToNewTable(db, TABLE_SYSTEM, TABLE_SECURE,
                     settingsToMove, true);
 
-            upgradeVersion = 117;
+            upgradeVersion = 116;
         }
 
         // *** Remember to update DATABASE_VERSION above!
