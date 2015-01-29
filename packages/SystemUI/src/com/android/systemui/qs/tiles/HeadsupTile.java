@@ -29,6 +29,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.CheckedTextView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import com.android.systemui.R;
 import com.android.systemui.qs.QSTile;
@@ -55,6 +56,7 @@ public class HeadsupTile extends QSTile<QSTile.BooleanState> {
     protected void handleClick() {
         toggleState();
         refreshState();
+	toast();
     }
 
      @Override
@@ -106,6 +108,20 @@ public class HeadsupTile extends QSTile<QSTile.BooleanState> {
             mObserver.endObserving();
         }
     }
+
+    protected void toast() {
+  	/* show a toast */
+        String enabled = mContext.getString(R.string.heads_up_enabled);
+        String disabled = mContext.getString(R.string.heads_up_disabled);
+        int duration = Toast.LENGTH_SHORT;
+        if (headsupEnabled()) {
+            Toast toast = Toast.makeText(mContext, enabled, duration);
+            toast.show();
+        } else {
+            Toast toast = Toast.makeText(mContext, disabled, duration);
+            toast.show();
+        	}
+	}
 
     private class HeadsupObserver extends ContentObserver {
         public HeadsupObserver(Handler handler) {
