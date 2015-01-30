@@ -1874,5 +1874,7 @@
     <!-- Theme reset notification -->
     <string name="theme_reset_notification_title">Réinitialisation du thème</string>
     <string name="theme_reset_notification_body">Le thème système est restauré en raison de multiples plantages d\'applications</string>
-	
+
+    <!-- Slim Roms seekbar -->
+    <string name="default_string">Par défaut</string>
 </resources>
