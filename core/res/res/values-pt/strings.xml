@@ -1799,7 +1799,7 @@
     <string name="global_action_reboot">Reiniciar</string>
 
     <!-- label for item that screenshots in phone options dialog -->
-    <string name="global_action_screenshot">Screenshot</string>
+    <string name="global_action_screenshot">Capturar tela</string>
 
     <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
     <string name="reboot_progress">Reiniciando\u2026</string>
@@ -1852,7 +1852,7 @@
     <string name="permdesc_setKeyguardWallpaper">Permite que um aplicativo mude o papel de parede da tela de bloqueio.</string>
 
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
-    <string name="permlab_recordScreen">Gravar conteúdo exibido</string>
+    <string name="permlab_recordScreen">Gravar conteúdo exibido na tela</string>
 
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_recordScreen">Permite ao aplicativo gravar a tela dos usuários</string>
@@ -1865,13 +1865,16 @@
     <string name="theme_install_error_message">%s falhou ao instalar</string>
 
     <!-- Privacy Guard -->
-    <string name="permlab_changePrivacyGuardState">Ativar ou desativar proteção de privacidade</string>
-    <string name="permdesc_changePrivacyGuardState">Permite ao aplicativo alterar se outro aplicativo é executado com proteção de privacidade. Quando um aplicativo está sendo executado com proteção de privacidade, ele não terá acesso aos dados pessoais, como contatos, registros de chamadas ou mensagens.</string>
-    <string name="privacy_guard_notification">Proteção de privacidade ativada</string>
+    <string name="permlab_changePrivacyGuardState">Ativar ou desativar proteção à Privacidade</string>
+    <string name="permdesc_changePrivacyGuardState">Quando a Proteção à Privacidade estiver ativada, o aplicativo não será capaz de acessar dados pessoais como contatos, mensagens e registro de chamadas.</string>
+    <string name="privacy_guard_notification">Proteção à Privacidade ativada</string>
     <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> não será capaz de acessar dados pessoais</string>
     <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> não será capaz de acessar as permissões personalizadas</string>
     
     <!-- Theme reset notification -->
     <string name="theme_reset_notification_title">Redefinição de tema</string>
     <string name="theme_reset_notification_body">Tema do sistema redefinido devido a várias falhas do aplicativo</string>
+
+    <!-- Slim Roms seekbar -->
+    <string name="default_string">Padrão</string>
 </resources>
