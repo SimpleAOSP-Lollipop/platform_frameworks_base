@@ -970,6 +970,9 @@
     <!-- Screen timeout qs tile -->
     <string name="quick_settings_screen_timeout_detail_title">Screen timeout</string>
 
+    <!-- Screenshot qs tile -->
+    <string name="quick_settings_screenshot">Screenshot</string>
+
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Heads up notifications are enabled</string>
     <string name="heads_up_disabled">Heads up notifications are disabled</string>
