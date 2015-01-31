@@ -973,6 +973,10 @@
     <!-- Screenshot qs tile -->
     <string name="quick_settings_screenshot">Screenshot</string>
 
+    <!-- Sync qs tile -->
+    <string name="quick_settings_sync">Sync</string>
+    <string name="quick_settings_sync_off">Sync off</string>
+
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Heads up notifications are enabled</string>
     <string name="heads_up_disabled">Heads up notifications are disabled</string>
