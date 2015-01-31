@@ -359,4 +359,86 @@
     <string name="hidden_notifications_setup" msgid="41079514801976810">"Configurar"</string>
     <string name="muted_by" msgid="6147073845094180001">"Som desativado por <xliff:g id="THIRD_PARTY">%1$s</xliff:g>"</string>
     <string name="zen_mode_and_condition" msgid="4462471036429759903">"<xliff:g id="ZEN_MODE">%1$s</xliff:g>. <xliff:g id="EXIT_CONDITION">%2$s</xliff:g>"</string>
+
+    <!-- Screenshot delete -->
+    <string name="screenshot_delete_action">Apagar</string>
+    <string name="screenshot_delete_confirmation">Captura de tela apagada</string>
+
+    <!-- The text for the button in the notification window-shade that clears
+         all of the currently visible notifications. [CHAR LIMIT=10]-->
+    <string name="clear_recents">Fechar todos os recentes</string>
+
+    <!-- Development shortcuts -->
+    <string name="advanced_dev_option_wipe_app">Limpar dados do app</string>
+    <string name="advanced_dev_option_force_stop">Forçar parada</string>
+    <string name="advanced_dev_option_uninstall">Desinstalar</string>
+
+    <!-- Content description of the data connection type HSPA+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_data_connection_HP">HSPA+</string>
+
+    <!-- Weather string format in expanded statusbar header -->
+    <string name="status_bar_expanded_header_weather_format"><xliff:g id="temp">%1$s</xliff:g> - <xliff:g id="condition">%2$s</xliff:g></string>
+
+    <!-- QS location sensors -->
+    <!-- Content description of the location tile in quick settings when on, battery saving mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_battery_saving">Localização reportando: modo economia de bateria.</string>
+    <!-- Content description of the location tile in quick settings when on, sensors only mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_gps_only">Localização reportando: modo somente no dispositivo.</string>
+    <!-- Content description of the location tile in quick settings when on, high accuracy mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_high_accuracy">Localização reportando: modo alta precisão.</string>
+
+
+    <!-- QuickSettings: Location detail panel title [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_detail_title">Modo de localização</string>
+    <!-- QuickSettings: Location (On, low-power) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_battery_saving_label">Economia de bateria</string>
+    <!-- QuickSettings: Location (On, gps-only) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_gps_only_label">Somente no dispositivo</string>
+    <!-- QuickSettings: Location (On, high-accuracy) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_high_accuracy_label">Alta precisão</string>
+    
+    <!-- NFC qs tile -->
+    <string name="quick_settings_nfc_label">NFC</string>
+
+    <!-- Compass qs tile -->
+    <string name="quick_settings_compass_label">Bússola</string>
+    <string name="quick_settings_compass_value" translatable="false"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Inicializando\u2026</string>
+
+    <!-- Lockscreen qs tile -->
+    <string name="quick_settings_lockscreen_label">Tela de bloqueio</string>
+
+    <!-- LTE qs tile -->
+    <string name="quick_settings_lte_label">LTE</string>
+
+    <!-- Heads up qs tile -->
+    <string name="quick_settings_heads_up_on">Heads up ativado</string>
+    <string name="quick_settings_heads_up_off">No interruptions</string>
+
+    <!-- Screen timeout qs tile -->
+    <string name="quick_settings_screen_timeout_detail_title">Tempo de tela</string>
+
+    <!-- Heads up toast -->
+    <string name="heads_up_enabled">As notificações pop-up estão ativadas</string>
+    <string name="heads_up_disabled">As notificações pop-up estão desativadas</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="left_shortcut_hint">Deslize a direita para %1$s</string>
+    <string name="right_shortcut_hint">Deslize a esquerda para %1$s</string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_dialog_title">Atribua uma ação</string>
+    <string name="navbar_home_button">Botão Home</string>
+    <string name="navbar_recent_button">Botão Recentes</string>
+    <string name="navbar_search_button">Botão Pesquisa</string>
+    <string name="navbar_back_button">Botão Voltar</string>
+    <string name="navbar_empty_button">Botão Vazio</string>
+    <string name="navbar_menu_conditional_button">Botão Menu auto-ocultar</string>
+    <string name="navbar_menu_always_button">Botão Menu sempre mostrar</string>
+    <string name="navbar_menu_big_button">Botão Menu</string>
+
+    <!-- Navigation bar cursor -->
+    <string name="accessibility_dpad_left">Cursor esquerdo</string>
+    <string name="accessibility_dpad_right">Cursor direito</string>
 </resources>
+
