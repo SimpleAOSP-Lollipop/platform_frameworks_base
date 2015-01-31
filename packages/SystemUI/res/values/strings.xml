@@ -961,11 +961,14 @@
     <string name="quick_settings_lockscreen_label">Lock screen</string>
 
     <!-- LTE qs tile -->
-    <string name="quick_settings_lte_tile_title">LTE</string>
+    <string name="quick_settings_lte_label">LTE</string>
 
-    <!-- Heads up tile -->
+    <!-- Heads up qs tile -->
     <string name="quick_settings_heads_up_on">Heads up enabled</string>
     <string name="quick_settings_heads_up_off">No interruptions</string>
+
+    <!-- Screen timeout qs tile -->
+    <string name="quick_settings_screen_timeout_detail_title">Screen timeout</string>
 
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Heads up notifications are enabled</string>
