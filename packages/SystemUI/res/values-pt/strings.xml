@@ -413,7 +413,7 @@
 
     <!-- Heads up qs tile -->
     <string name="quick_settings_heads_up_on">Heads up ativado</string>
-    <string name="quick_settings_heads_up_off">No interruptions</string>
+    <string name="quick_settings_heads_up_off">Sem interrupções</string>
 
     <!-- Screen timeout qs tile -->
     <string name="quick_settings_screen_timeout_detail_title">Tempo de tela</string>
