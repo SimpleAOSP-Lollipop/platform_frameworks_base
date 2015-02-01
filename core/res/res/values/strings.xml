@@ -4891,7 +4891,7 @@
     <string name="zen_mode_forever">Indefinitely</string>
 
     <!-- kill app long press back -->
-    <string name="app_killed_message">Application killed</string>
+    <string name="app_killed_message">App killed</string>
 
     <!-- Title of dialog to confirm rebooting. -->
     <string name="reboot_title">Reboot</string>
