@@ -415,6 +415,13 @@
     
     <!-- Screen timeout qs tile -->
     <string name="quick_settings_screen_timeout_detail_title">Mise en veille de l\'écran</string>
+    
+    <!-- Screenshot qs tile -->
+    <string name="quick_settings_screenshot">Capture d\'écran</string>
+
+    <!-- Sync qs tile -->
+    <string name="quick_settings_sync">Synchronisation</string>
+    <string name="quick_settings_sync_off">Synchronisation éteinte</string>
 
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Les notifications flottantes sont activées</string>
