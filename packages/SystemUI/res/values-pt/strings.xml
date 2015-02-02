@@ -418,6 +418,13 @@
     <!-- Screen timeout qs tile -->
     <string name="quick_settings_screen_timeout_detail_title">Tempo de tela</string>
 
+    <!-- Screenshot qs tile -->
+    <string name="quick_settings_screenshot">Capturar tela</string>
+
+    <!-- Sync qs tile -->
+    <string name="quick_settings_sync">Sincronizar</string>
+    <string name="quick_settings_sync_off">Sincronização desativada</string>
+
     <!-- Heads up toast -->
     <string name="heads_up_enabled">As notificações pop-up estão ativadas</string>
     <string name="heads_up_disabled">As notificações pop-up estão desativadas</string>
