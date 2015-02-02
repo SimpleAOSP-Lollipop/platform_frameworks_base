@@ -3309,6 +3309,12 @@ public final class Settings {
         public static final String DOZE_TIMEOUT = "doze_timeout";
 
         /**
+         * Motion sensors trigger doze (pick up gesture or significant motion)
+         * @hide
+         */
+        public static final String DOZE_TRIGGER_MOTION = "doze_trigger_motion";
+
+        /**
          * Whether to mute annoying notifications
          * @hide
          */
