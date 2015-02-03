@@ -1859,7 +1859,7 @@
 
     <!-- label for screen record item in phone options dialog -->
     <string name="global_action_screen_record">Gravar tela</string>
-  
+
     <!-- Theme installation error notification -->
     <string name="theme_install_error_title">Falha ao instalar tema</string>
     <string name="theme_install_error_message">%s falhou ao instalar</string>
@@ -1870,11 +1870,16 @@
     <string name="privacy_guard_notification">Proteção à Privacidade ativada</string>
     <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> não será capaz de acessar dados pessoais</string>
     <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> não será capaz de acessar as permissões personalizadas</string>
-    
+
     <!-- Theme reset notification -->
     <string name="theme_reset_notification_title">Redefinição de tema</string>
     <string name="theme_reset_notification_body">Tema do sistema redefinido devido a várias falhas do aplicativo</string>
 
     <!-- Slim Roms seekbar -->
     <string name="default_string">Padrão</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessTorchService">Acesso ao serviço da tocha</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessTorchService">Permite que um aplicativo acesse o serviço da tocha. Nunca deve ser necessário para um aplicativo normal.</string>
 </resources>
