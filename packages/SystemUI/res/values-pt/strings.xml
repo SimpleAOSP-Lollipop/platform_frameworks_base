@@ -447,4 +447,22 @@
     <!-- Navigation bar cursor -->
     <string name="accessibility_dpad_left">Cursor esquerdo</string>
     <string name="accessibility_dpad_right">Cursor direito</string>
+
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Atalhos de início rápido</string>
+    <string name="navring_target_reset_message">Excluir todos os atalhos da barra de navegação criados pelo usuário e restaurar para o padrão?</string>
+    <string name="navring_target_reset">Redefinir atalhos da barra de navegação para padrão</string>
+    <string name="navring_action_open_ime_switcher">Abrir IME Switcher</string>
+    <string name="navring_action_kill_app">Matar app</string>
+    <string name="navring_action_none">Nenhum</string>
+    <string name="navring_action_take_screenshot">Capturar tela</string>
+    <string name="navring_action_ring_vibrate">Anel/Vibração</string>
+    <string name="navring_action_ring_silent">Anel/Silencioso</string>
+    <string name="navring_action_ring_vibrate_silent">Anel/Vibração/Silencioso</string>
+    <string name="navring_action_screen_off">Desligar tela</string>
+    <string name="navring_action_torch">Alternar tocha</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Escolha uma ação</string>
+    <string name="select_application">Escolher aplicação</string>
+    <string name="lockscreen_target_empty">Vazio</string>
 </resources>
