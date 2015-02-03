@@ -764,6 +764,14 @@ class ContextImpl extends Context {
                 IBinder b = ServiceManager.getService(APPWIDGET_SERVICE);
                 return new AppWidgetManager(ctx, IAppWidgetService.Stub.asInterface(b));
             }});
+			
+        registerService(TORCH_SERVICE, new ServiceFetcher() {
+            public Object createService(ContextImpl ctx) {
+                IBinder b = ServiceManager.getService(TORCH_SERVICE);
+                ITorchService service = ITorchService.Stub.asInterface(b);
+                final Context outerContext = ctx.getOuterContext();
+                return new TorchManager(outerContext, service);
+            }});
     }
 
     static ContextImpl getImpl(Context context) {
@@ -774,14 +782,6 @@ class ContextImpl extends Context {
         }
         return (ContextImpl)context;
     }
-
-        registerService(TORCH_SERVICE, new ServiceFetcher() {
-            public Object createService(ContextImpl ctx) {
-                IBinder b = ServiceManager.getService(TORCH_SERVICE);
-                ITorchService service = ITorchService.Stub.asInterface(b);
-                final Context outerContext = ctx.getOuterContext();
-                return new TorchManager(outerContext, service);
-            }});
 
     // The system service cache for the system services that are
     // cached per-ContextImpl.  Package-scoped to avoid accessor

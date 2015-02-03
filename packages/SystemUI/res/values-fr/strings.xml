@@ -445,4 +445,22 @@
     <!-- Navigation bar cursor -->
     <string name="accessibility_dpad_left">Curseur gauche</string>
     <string name="accessibility_dpad_right">Curseur droit</string>
+	
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Raccourcis de lancement rapide</string>
+    <string name="navring_target_reset_message">Supprimer tout les raccourcis de l\'anneau de navigation et restaurer la configuration par défaut ?</string>
+    <string name="navring_target_reset">Raccourcis de la barre de navigation réinitialisés par défaut</string>
+    <string name="navring_action_open_ime_switcher">Ouvrir le sélecteur de clavier</string>
+    <string name="navring_action_kill_app">Tuer l\'application</string>
+    <string name="navring_action_none">Aucun</string>
+    <string name="navring_action_take_screenshot">Prendre une capture d\'écran</string>
+    <string name="navring_action_ring_vibrate">Sonnerie / vibreur</string>
+    <string name="navring_action_ring_silent">Sonnerie / silencieux</string>
+    <string name="navring_action_ring_vibrate_silent">Sonnerie / vibreur / silencieux</string>
+    <string name="navring_action_screen_off">Éteindre l\'écran"</string>
+    <string name="navring_action_torch">Lampe de poche</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Choisir l\'action</string>
+    <string name="select_application">Sélectionner l\'application</string>
+    <string name="lockscreen_target_empty">Vide</string>
 </resources>
