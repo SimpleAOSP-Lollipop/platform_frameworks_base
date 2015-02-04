@@ -984,6 +984,7 @@
     <!-- Lockscreen shortcuts -->
     <string name="left_shortcut_hint">Swipe right for %1$s</string>
     <string name="right_shortcut_hint">Swipe left for %1$s</string>
+    <string name="quick_settings_lockscreen_label_enforced">Lock screen enforced</string>
 
     <!-- Dialog title for navigation bar button selection -->
     <string name="navbar_dialog_title">Choose action to assign</string>
