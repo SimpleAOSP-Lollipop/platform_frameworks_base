@@ -39,12 +39,12 @@ public class BarTransitions {
 
     public static final boolean HIGH_END = ActivityManager.isHighEndGfx();
 
-    public static int MODE_OPAQUE            = 0;
-    public static int MODE_SEMI_TRANSPARENT  = 1;
+    public static final int MODE_OPAQUE = 0;
+    public static final int MODE_SEMI_TRANSPARENT = 1;
     public static final int MODE_TRANSLUCENT = 2;
-    public static final int MODE_LIGHTS_OUT  = 3;
-    public static int MODE_TRANSPARENT       = 4;
-    public static final int MODE_WARNING     = 5;
+    public static final int MODE_LIGHTS_OUT = 3;
+    public static final int MODE_TRANSPARENT = 4;
+    public static final int MODE_WARNING = 5;
 
     public static final int LIGHTS_IN_DURATION  = 250;
     public static final int LIGHTS_OUT_DURATION = 750;
