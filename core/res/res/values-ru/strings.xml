@@ -27,17 +27,17 @@
     <string name="terabyteShort" msgid="231613018159186962">"TБ"</string>
     <string name="petabyteShort" msgid="5637816680144990219">"ПБ"</string>
     <string name="fileSizeSuffix" msgid="9164292791500531949">"<xliff:g id="NUMBER">%1$s</xliff:g> <xliff:g id="UNIT">%2$s</xliff:g>"</string>
-    <string name="durationDays" msgid="6652371460511178259">"<xliff:g id="DAYS">%1$d</xliff:g> дн."</string>
-    <string name="durationDayHours" msgid="2713107458736744435">"<xliff:g id="DAYS">%1$d</xliff:g> день <xliff:g id="HOURS">%2$d</xliff:g> ч."</string>
-    <string name="durationDayHour" msgid="7293789639090958917">"<xliff:g id="DAYS">%1$d</xliff:g> день <xliff:g id="HOURS">%2$d</xliff:g> ч."</string>
-    <string name="durationHours" msgid="4266858287167358988">"<xliff:g id="HOURS">%1$d</xliff:g> ч."</string>
-    <string name="durationHourMinutes" msgid="9029176248692041549">"<xliff:g id="HOURS">%1$d</xliff:g> ч. <xliff:g id="MINUTES">%2$d</xliff:g> мин."</string>
-    <string name="durationHourMinute" msgid="2741677355177402539">"<xliff:g id="HOURS">%1$d</xliff:g> ч. <xliff:g id="MINUTES">%2$d</xliff:g> мин."</string>
-    <string name="durationMinutes" msgid="3134226679883579347">"<xliff:g id="MINUTES">%1$d</xliff:g> мин."</string>
-    <string name="durationMinuteSeconds" msgid="1424656185379003751">"<xliff:g id="MINUTES">%1$d</xliff:g> мин. <xliff:g id="SECONDS">%2$d</xliff:g> с"</string>
-    <string name="durationMinuteSecond" msgid="3989228718067466680">"<xliff:g id="MINUTES">%1$d</xliff:g> мин. <xliff:g id="SECONDS">%2$d</xliff:g> с"</string>
-    <string name="durationSeconds" msgid="8050088505238241405">"<xliff:g id="SECONDS">%1$d</xliff:g> с"</string>
-    <string name="durationSecond" msgid="985669622276420331">"<xliff:g id="SECONDS">%1$d</xliff:g> с"</string>
+    <string name="durationDays" msgid="6652371460511178259">"<xliff:g id="DAYS">%1$d</xliff:g> дн."</string>
+    <string name="durationDayHours" msgid="2713107458736744435">"<xliff:g id="DAYS">%1$d</xliff:g> день <xliff:g id="HOURS">%2$d</xliff:g> ч."</string>
+    <string name="durationDayHour" msgid="7293789639090958917">"<xliff:g id="DAYS">%1$d</xliff:g> день <xliff:g id="HOURS">%2$d</xliff:g> ч."</string>
+    <string name="durationHours" msgid="4266858287167358988">"<xliff:g id="HOURS">%1$d</xliff:g> ч."</string>
+    <string name="durationHourMinutes" msgid="9029176248692041549">"<xliff:g id="HOURS">%1$d</xliff:g> ч. <xliff:g id="MINUTES">%2$d</xliff:g> мин."</string>
+    <string name="durationHourMinute" msgid="2741677355177402539">"<xliff:g id="HOURS">%1$d</xliff:g> ч. <xliff:g id="MINUTES">%2$d</xliff:g> мин."</string>
+    <string name="durationMinutes" msgid="3134226679883579347">"<xliff:g id="MINUTES">%1$d</xliff:g> мин."</string>
+    <string name="durationMinuteSeconds" msgid="1424656185379003751">"<xliff:g id="MINUTES">%1$d</xliff:g> мин. <xliff:g id="SECONDS">%2$d</xliff:g> с"</string>
+    <string name="durationMinuteSecond" msgid="3989228718067466680">"<xliff:g id="MINUTES">%1$d</xliff:g> мин. <xliff:g id="SECONDS">%2$d</xliff:g> с"</string>
+    <string name="durationSeconds" msgid="8050088505238241405">"<xliff:g id="SECONDS">%1$d</xliff:g> с"</string>
+    <string name="durationSecond" msgid="985669622276420331">"<xliff:g id="SECONDS">%1$d</xliff:g> с"</string>
     <string name="untitled" msgid="4638956954852782576">"&lt;Без названия&gt;"</string>
     <string name="ellipsis" msgid="7899829516048813237">"…"</string>
     <string name="ellipsis_two_dots" msgid="1228078994866030736">"..."</string>
@@ -536,7 +536,7 @@
     <string name="permlab_captureSecureVideoOutput" msgid="7815398969303382016">"захват защищенного видеосигнала"</string>
     <string name="permdesc_captureSecureVideoOutput" msgid="2779793064709350289">"Приложение сможет захватывать и перенаправлять защищенный видеосигнал."</string>
     <string name="permlab_mediaContentControl" msgid="8749790560720562511">"Управление воспроизведением и доступом к метаданным"</string>
-    <string name="permdesc_mediaContentControl" msgid="1637478200272062">"Приложение сможет управлять воспроизведением медиаконтента и доступом к метаданным (названию, автору и т. д.)"</string>
+    <string name="permdesc_mediaContentControl" msgid="1637478200272062">"Приложение сможет управлять воспроизведением медиаконтента и доступом к метаданным (названию, автору и т. д.)"</string>
     <string name="permlab_modifyAudioSettings" msgid="6095859937069146086">"Изменение настроек аудио"</string>
     <string name="permdesc_modifyAudioSettings" msgid="3522565366806248517">"Приложение сможет изменять системные настройки звука, например уровень громкости и активный динамик."</string>
     <string name="permlab_recordAudio" msgid="3876049771427466323">"Запись аудио"</string>
@@ -742,8 +742,8 @@
     <string name="permdesc_setInputCalibration" msgid="4527511047549456929">"Приложение сможет изменять параметры калибровки сенсорного экрана. Это разрешение обычно используется только специальными приложениями."</string>
     <string name="permlab_accessDrmCertificates" msgid="7436886640723203615">"Доступ к сертификатам DRM"</string>
     <string name="permdesc_accessDrmCertificates" msgid="8073288354426159089">"Приложение сможет синхронизировать и использовать сертификаты DRM (разрешение актуально только для специальных приложений)."</string>
-    <string name="permlab_handoverStatus" msgid="1159132046126626731">"Получение статуса передачи Android Beam"</string>
-    <string name="permdesc_handoverStatus" msgid="4788144087245714948">"Получение информации о текущих передачах Android Beam."</string>
+    <string name="permlab_handoverStatus" msgid="1159132046126626731">"Получение статуса передачи Android Beam"</string>
+    <string name="permdesc_handoverStatus" msgid="4788144087245714948">"Получение информации о текущих передачах Android Beam."</string>
     <string name="permlab_removeDrmCertificates" msgid="7044888287209892751">"удаление сертификатов DRM"</string>
     <string name="permdesc_removeDrmCertificates" msgid="7272999075113400993">"Удаление сертификатов DRM. Большинству приложений это разрешение не требуется."</string>
     <string name="policylab_limitPassword" msgid="4497420728857585791">"Правила выбора паролей"</string>
@@ -1146,16 +1146,16 @@
     <string name="year" msgid="4001118221013892076">"г."</string>
     <string name="years" msgid="6881577717993213522">"г."</string>
   <plurals name="duration_seconds">
-    <item quantity="one" msgid="6962015528372969481">"1 сек."</item>
-    <item quantity="other" msgid="1886107766577166786">"<xliff:g id="COUNT">%d</xliff:g> сек."</item>
+    <item quantity="one" msgid="6962015528372969481">"1 сек."</item>
+    <item quantity="other" msgid="1886107766577166786">"<xliff:g id="COUNT">%d</xliff:g> сек."</item>
   </plurals>
   <plurals name="duration_minutes">
-    <item quantity="one" msgid="4915414002546085617">"1 мин."</item>
-    <item quantity="other" msgid="3165187169224908775">"<xliff:g id="COUNT">%d</xliff:g> мин."</item>
+    <item quantity="one" msgid="4915414002546085617">"1 мин."</item>
+    <item quantity="other" msgid="3165187169224908775">"<xliff:g id="COUNT">%d</xliff:g> мин."</item>
   </plurals>
   <plurals name="duration_hours">
-    <item quantity="one" msgid="8917467491248809972">"1 ч."</item>
-    <item quantity="other" msgid="3863962854246773930">"<xliff:g id="COUNT">%d</xliff:g> ч."</item>
+    <item quantity="one" msgid="8917467491248809972">"1 ч."</item>
+    <item quantity="other" msgid="3863962854246773930">"<xliff:g id="COUNT">%d</xliff:g> ч."</item>
   </plurals>
     <string name="VideoView_error_title" msgid="3534509135438353077">"Ошибка"</string>
     <string name="VideoView_error_text_invalid_progressive_playback" msgid="3186670335938670444">"Это видео не предназначено для потокового воспроизведения на данном устройстве."</string>
@@ -1183,7 +1183,7 @@
     <string name="editTextMenuTitle" msgid="4909135564941815494">"Операции с текстом"</string>
     <string name="low_internal_storage_view_title" msgid="5576272496365684834">"Недостаточно памяти"</string>
     <string name="low_internal_storage_view_text" msgid="6640505817617414371">"Некоторые функции могут не работать"</string>
-    <string name="low_internal_storage_view_text_no_boot" msgid="6935190099204693424">"Недостаточно свободного места для системы. Освободите не менее 250 МБ дискового пространства и перезапустите устройство."</string>
+    <string name="low_internal_storage_view_text_no_boot" msgid="6935190099204693424">"Недостаточно свободного места для системы. Освободите не менее 250 МБ дискового пространства и перезапустите устройство."</string>
     <string name="app_running_notification_title" msgid="8718335121060787914">"Приложение \"<xliff:g id="APP_NAME">%1$s</xliff:g>\" выполняется"</string>
     <string name="app_running_notification_text" msgid="4653586947747330058">"Нажмите, чтобы получить дополнительные данные или выключить приложение."</string>
     <string name="ok" msgid="5970060430562524910">"ОК"</string>
@@ -1610,7 +1610,7 @@
     <string name="kg_sim_unlock_progress_dialog_message" msgid="8950398016976865762">"Разблокировка SIM-карты…"</string>
     <string name="kg_password_wrong_pin_code" msgid="1139324887413846912">"Неверный PIN-код."</string>
     <string name="kg_invalid_sim_pin_hint" msgid="8795159358110620001">"Введите PIN-код (от 4 до 8 цифр)."</string>
-    <string name="kg_invalid_sim_puk_hint" msgid="6025069204539532000">"PUK-код должен содержать 8 символов."</string>
+    <string name="kg_invalid_sim_puk_hint" msgid="6025069204539532000">"PUK-код должен содержать 8 символов."</string>
     <string name="kg_invalid_puk" msgid="3638289409676051243">"Введите правильный PUK-код. После нескольких неудачных попыток SIM-карта будет заблокирована."</string>
     <string name="kg_invalid_confirm_pin_hint" product="default" msgid="7003469261464593516">"PIN-коды не совпадают"</string>
     <string name="kg_login_too_many_attempts" msgid="6486842094005698475">"Слишком много попыток ввода графического ключа"</string>
@@ -1643,87 +1643,87 @@
     <string name="error_message_change_not_allowed" msgid="1347282344200417578">"Это действие запрещено администратором"</string>
     <string name="app_not_found" msgid="3429141853498927379">"Невозможно обработать это действие"</string>
     <string name="revoke" msgid="5404479185228271586">"Отменить"</string>
-    <string name="mediasize_iso_a0" msgid="1994474252931294172">"ISO A0 (841 х 1189 мм)"</string>
-    <string name="mediasize_iso_a1" msgid="3333060421529791786">"ISO A1 (594 х 841 мм)"</string>
-    <string name="mediasize_iso_a2" msgid="3097535991925798280">"ISO A2 (420 х 594 мм)"</string>
-    <string name="mediasize_iso_a3" msgid="3023213259314236123">"ISO A3 (297 х 420 мм)"</string>
-    <string name="mediasize_iso_a4" msgid="231745325296873764">"ISO A4 (210 х 297 мм)"</string>
-    <string name="mediasize_iso_a5" msgid="3484327407340865411">"ISO A5 (148 х 210 мм)"</string>
-    <string name="mediasize_iso_a6" msgid="4861908487129577530">"ISO A6 (105 х 148 мм)"</string>
-    <string name="mediasize_iso_a7" msgid="5890208588072936130">"ISO A7 (74 х 105 мм)"</string>
-    <string name="mediasize_iso_a8" msgid="4319425041085816612">"ISO A8 (52 х 74 мм)"</string>
-    <string name="mediasize_iso_a9" msgid="4882220529506432008">"ISO A9 (37 х 52 мм)"</string>
-    <string name="mediasize_iso_a10" msgid="2382866026365359391">"ISO A10 (26 х 37 мм)"</string>
-    <string name="mediasize_iso_b0" msgid="3651827147402009675">"ISO B0 (1000 х 1414 мм)"</string>
-    <string name="mediasize_iso_b1" msgid="6072859628278739957">"ISO B1 (707 х 1000 мм)"</string>
-    <string name="mediasize_iso_b2" msgid="1348731852150380378">"ISO B2 (500 х 707 мм)"</string>
-    <string name="mediasize_iso_b3" msgid="2612510181259261379">"ISO B3 (353 х 500 мм)"</string>
-    <string name="mediasize_iso_b4" msgid="695151378838115434">"ISO B4 (250 х 353 мм)"</string>
-    <string name="mediasize_iso_b5" msgid="4863754285582212487">"ISO B5 (176 х 250 мм)"</string>
-    <string name="mediasize_iso_b6" msgid="5305816292139647241">"ISO B6 (125 х 176 мм)"</string>
-    <string name="mediasize_iso_b7" msgid="531673542602786624">"ISO B7 (88 х 125 мм)"</string>
-    <string name="mediasize_iso_b8" msgid="9164474595708850034">"ISO B8 (62 х 88 мм)"</string>
-    <string name="mediasize_iso_b9" msgid="282102976764774160">"ISO B9 (44 х 62 мм)"</string>
-    <string name="mediasize_iso_b10" msgid="4517141714407898976">"ISO B10 (31 х 44 мм)"</string>
-    <string name="mediasize_iso_c0" msgid="3103521357901591100">"ISO C0 (917 х 1297 мм)"</string>
-    <string name="mediasize_iso_c1" msgid="1231954105985048595">"ISO C1 (648 х 917 мм)"</string>
-    <string name="mediasize_iso_c2" msgid="927702816980087462">"ISO C2 (458 х 648 мм)"</string>
-    <string name="mediasize_iso_c3" msgid="835154173518304159">"ISO C3 (324 х 458 мм)"</string>
-    <string name="mediasize_iso_c4" msgid="5095951985108194011">"ISO C4 (229 х 324 мм)"</string>
-    <string name="mediasize_iso_c5" msgid="1985397450332305739">"ISO C5 (162 х 229 мм)"</string>
-    <string name="mediasize_iso_c6" msgid="8147421924174693013">"ISO C6 (114 х 162 мм)"</string>
-    <string name="mediasize_iso_c7" msgid="8993994925276122950">"ISO C7 (81 х 114 мм)"</string>
-    <string name="mediasize_iso_c8" msgid="6871178104139598957">"ISO C8 (57 х 81 мм)"</string>
-    <string name="mediasize_iso_c9" msgid="7983532635227561362">"ISO C9 (40 х 57 мм)"</string>
-    <string name="mediasize_iso_c10" msgid="5040764293406765584">"ISO C10 (28 х 40 мм)"</string>
-    <string name="mediasize_na_letter" msgid="2841414839888344296">"Letter (216 х 279 мм)"</string>
-    <string name="mediasize_na_gvrnmt_letter" msgid="5295836838862962809">"Government Letter (203 х 267 мм)"</string>
-    <string name="mediasize_na_legal" msgid="8621364037680465666">"Legal (216 х 356 мм)"</string>
-    <string name="mediasize_na_junior_legal" msgid="3309324162155085904">"Junior Legal (203 х 127 мм)"</string>
-    <string name="mediasize_na_ledger" msgid="5567030340509075333">"Ledger (432 х 279 мм)"</string>
-    <string name="mediasize_na_tabloid" msgid="4571735038501661757">"Tabloid (279 х 432 мм)"</string>
-    <string name="mediasize_na_index_3x5" msgid="5182901917818625126">"Index Card 3 x 5 (76 x 127 мм)"</string>
-    <string name="mediasize_na_index_4x6" msgid="7687620625422312396">"Index Card 4 x 6 (102 x 152 мм)"</string>
-    <string name="mediasize_na_index_5x8" msgid="8834215284646872800">"Index Card 5 x 8 (127 x 203 мм)"</string>
-    <string name="mediasize_na_monarch" msgid="213639906956550754">"Monarch (184 x 267 мм)"</string>
-    <string name="mediasize_na_quarto" msgid="835778493593023223">"Quarto (203 x 254 мм)"</string>
-    <string name="mediasize_na_foolscap" msgid="1573911237983677138">"Foolscap (203 x 330 мм)"</string>
-    <string name="mediasize_chinese_roc_8k" msgid="3626855847189438896">"ROC 8K (270 x 390 мм)"</string>
-    <string name="mediasize_chinese_roc_16k" msgid="9182191577022943355">"ROC 16K (195 x 270 мм)"</string>
-    <string name="mediasize_chinese_prc_1" msgid="4793232644980170500">"PRC 1 (102 x 165 мм)"</string>
-    <string name="mediasize_chinese_prc_2" msgid="5404109730975720670">"PRC 2 (102 x 176 мм)"</string>
-    <string name="mediasize_chinese_prc_3" msgid="1335092253339363526">"PRC 3 (125 x 176 мм)"</string>
-    <string name="mediasize_chinese_prc_4" msgid="9167997800486569834">"PRC 4 (110 x 208 мм)"</string>
-    <string name="mediasize_chinese_prc_5" msgid="845875168823541497">"PRC 5 (110 x 220 мм)"</string>
-    <string name="mediasize_chinese_prc_6" msgid="3220325667692648789">"PRC 6 (120 x 320 мм)"</string>
-    <string name="mediasize_chinese_prc_7" msgid="1776792138507038527">"PRC 7 (160 x 230 мм)"</string>
-    <string name="mediasize_chinese_prc_8" msgid="1417176642687456692">"PRC 8 (120 x 309 мм)"</string>
-    <string name="mediasize_chinese_prc_9" msgid="4785983473123798365">"PRC 9 (229 x 324 мм)"</string>
-    <string name="mediasize_chinese_prc_10" msgid="7847982299391851899">"PRC 10 (324 x 458 мм)"</string>
-    <string name="mediasize_chinese_prc_16k" msgid="262793383539980677">"PRC 16K (146 x 215 мм)"</string>
-    <string name="mediasize_chinese_om_pa_kai" msgid="5256815579447959814">"Pa Kai (146 x 215 мм)"</string>
-    <string name="mediasize_chinese_om_dai_pa_kai" msgid="7336412963441354407">"Dai Pa Kai (275 х 395 мм)"</string>
-    <string name="mediasize_chinese_om_jurro_ku_kai" msgid="6324465444100490742">"Jurro Ku Kai (275 x 395 мм)"</string>
-    <string name="mediasize_japanese_jis_b10" msgid="1787262845627694376">"JIS B10 (32 x 45 мм)"</string>
-    <string name="mediasize_japanese_jis_b9" msgid="3336035783663287470">"JIS B9 (45 x 64 мм)"</string>
-    <string name="mediasize_japanese_jis_b8" msgid="6195398299104345731">"JIS B8 (64 x 91 мм)"</string>
-    <string name="mediasize_japanese_jis_b7" msgid="1674621886902828884">"JIS B7 (91 x 128 мм)"</string>
-    <string name="mediasize_japanese_jis_b6" msgid="4170576286062657435">"JIS B6 (128 x 182 мм)"</string>
-    <string name="mediasize_japanese_jis_b5" msgid="4899297958100032533">"JIS B5 (182 x 257 мм)"</string>
-    <string name="mediasize_japanese_jis_b4" msgid="4213158129126666847">"JIS B4 (257 x 364 мм)"</string>
-    <string name="mediasize_japanese_jis_b3" msgid="8513715307410310696">"JIS B3 (364 x 515 мм)"</string>
-    <string name="mediasize_japanese_jis_b2" msgid="4777690211897131190">"JIS B2 (515 x 728 мм)"</string>
-    <string name="mediasize_japanese_jis_b1" msgid="4608142385457034603">"JIS B1 (728 x 1030 мм)"</string>
-    <string name="mediasize_japanese_jis_b0" msgid="7587108366572243991">"JIS B0 (1030 x 1456 мм)"</string>
-    <string name="mediasize_japanese_jis_exec" msgid="5244075432263649068">"JIS Exec (216 x 330 мм)"</string>
-    <string name="mediasize_japanese_chou4" msgid="4941652015032631361">"Chou4 (90 x 205 мм)"</string>
-    <string name="mediasize_japanese_chou3" msgid="6387319169263957010">"Chou3 (120 x 235 мм)"</string>
-    <string name="mediasize_japanese_chou2" msgid="1299112025415343982">"Chou2 (111,1 x 146 мм)"</string>
-    <string name="mediasize_japanese_hagaki" msgid="8070115620644254565">"Hagaki (100 x 148 мм)"</string>
-    <string name="mediasize_japanese_oufuku" msgid="6049065587307896564">"Oufuku (148 x 200 мм)"</string>
-    <string name="mediasize_japanese_kahu" msgid="6872696027560065173">"Kaku (240 x 322,1 мм)"</string>
-    <string name="mediasize_japanese_kaku2" msgid="2359077233775455405">"Kaku2 (240 x 332 мм)"</string>
-    <string name="mediasize_japanese_you4" msgid="2091777168747058008">"You4 (105 x 235 мм)"</string>
+    <string name="mediasize_iso_a0" msgid="1994474252931294172">"ISO A0 (841 х 1189 мм)"</string>
+    <string name="mediasize_iso_a1" msgid="3333060421529791786">"ISO A1 (594 х 841 мм)"</string>
+    <string name="mediasize_iso_a2" msgid="3097535991925798280">"ISO A2 (420 х 594 мм)"</string>
+    <string name="mediasize_iso_a3" msgid="3023213259314236123">"ISO A3 (297 х 420 мм)"</string>
+    <string name="mediasize_iso_a4" msgid="231745325296873764">"ISO A4 (210 х 297 мм)"</string>
+    <string name="mediasize_iso_a5" msgid="3484327407340865411">"ISO A5 (148 х 210 мм)"</string>
+    <string name="mediasize_iso_a6" msgid="4861908487129577530">"ISO A6 (105 х 148 мм)"</string>
+    <string name="mediasize_iso_a7" msgid="5890208588072936130">"ISO A7 (74 х 105 мм)"</string>
+    <string name="mediasize_iso_a8" msgid="4319425041085816612">"ISO A8 (52 х 74 мм)"</string>
+    <string name="mediasize_iso_a9" msgid="4882220529506432008">"ISO A9 (37 х 52 мм)"</string>
+    <string name="mediasize_iso_a10" msgid="2382866026365359391">"ISO A10 (26 х 37 мм)"</string>
+    <string name="mediasize_iso_b0" msgid="3651827147402009675">"ISO B0 (1000 х 1414 мм)"</string>
+    <string name="mediasize_iso_b1" msgid="6072859628278739957">"ISO B1 (707 х 1000 мм)"</string>
+    <string name="mediasize_iso_b2" msgid="1348731852150380378">"ISO B2 (500 х 707 мм)"</string>
+    <string name="mediasize_iso_b3" msgid="2612510181259261379">"ISO B3 (353 х 500 мм)"</string>
+    <string name="mediasize_iso_b4" msgid="695151378838115434">"ISO B4 (250 х 353 мм)"</string>
+    <string name="mediasize_iso_b5" msgid="4863754285582212487">"ISO B5 (176 х 250 мм)"</string>
+    <string name="mediasize_iso_b6" msgid="5305816292139647241">"ISO B6 (125 х 176 мм)"</string>
+    <string name="mediasize_iso_b7" msgid="531673542602786624">"ISO B7 (88 х 125 мм)"</string>
+    <string name="mediasize_iso_b8" msgid="9164474595708850034">"ISO B8 (62 х 88 мм)"</string>
+    <string name="mediasize_iso_b9" msgid="282102976764774160">"ISO B9 (44 х 62 мм)"</string>
+    <string name="mediasize_iso_b10" msgid="4517141714407898976">"ISO B10 (31 х 44 мм)"</string>
+    <string name="mediasize_iso_c0" msgid="3103521357901591100">"ISO C0 (917 х 1297 мм)"</string>
+    <string name="mediasize_iso_c1" msgid="1231954105985048595">"ISO C1 (648 х 917 мм)"</string>
+    <string name="mediasize_iso_c2" msgid="927702816980087462">"ISO C2 (458 х 648 мм)"</string>
+    <string name="mediasize_iso_c3" msgid="835154173518304159">"ISO C3 (324 х 458 мм)"</string>
+    <string name="mediasize_iso_c4" msgid="5095951985108194011">"ISO C4 (229 х 324 мм)"</string>
+    <string name="mediasize_iso_c5" msgid="1985397450332305739">"ISO C5 (162 х 229 мм)"</string>
+    <string name="mediasize_iso_c6" msgid="8147421924174693013">"ISO C6 (114 х 162 мм)"</string>
+    <string name="mediasize_iso_c7" msgid="8993994925276122950">"ISO C7 (81 х 114 мм)"</string>
+    <string name="mediasize_iso_c8" msgid="6871178104139598957">"ISO C8 (57 х 81 мм)"</string>
+    <string name="mediasize_iso_c9" msgid="7983532635227561362">"ISO C9 (40 х 57 мм)"</string>
+    <string name="mediasize_iso_c10" msgid="5040764293406765584">"ISO C10 (28 х 40 мм)"</string>
+    <string name="mediasize_na_letter" msgid="2841414839888344296">"Letter (216 х 279 мм)"</string>
+    <string name="mediasize_na_gvrnmt_letter" msgid="5295836838862962809">"Government Letter (203 х 267 мм)"</string>
+    <string name="mediasize_na_legal" msgid="8621364037680465666">"Legal (216 х 356 мм)"</string>
+    <string name="mediasize_na_junior_legal" msgid="3309324162155085904">"Junior Legal (203 х 127 мм)"</string>
+    <string name="mediasize_na_ledger" msgid="5567030340509075333">"Ledger (432 х 279 мм)"</string>
+    <string name="mediasize_na_tabloid" msgid="4571735038501661757">"Tabloid (279 х 432 мм)"</string>
+    <string name="mediasize_na_index_3x5" msgid="5182901917818625126">"Index Card 3 x 5 (76 x 127 мм)"</string>
+    <string name="mediasize_na_index_4x6" msgid="7687620625422312396">"Index Card 4 x 6 (102 x 152 мм)"</string>
+    <string name="mediasize_na_index_5x8" msgid="8834215284646872800">"Index Card 5 x 8 (127 x 203 мм)"</string>
+    <string name="mediasize_na_monarch" msgid="213639906956550754">"Monarch (184 x 267 мм)"</string>
+    <string name="mediasize_na_quarto" msgid="835778493593023223">"Quarto (203 x 254 мм)"</string>
+    <string name="mediasize_na_foolscap" msgid="1573911237983677138">"Foolscap (203 x 330 мм)"</string>
+    <string name="mediasize_chinese_roc_8k" msgid="3626855847189438896">"ROC 8K (270 x 390 мм)"</string>
+    <string name="mediasize_chinese_roc_16k" msgid="9182191577022943355">"ROC 16K (195 x 270 мм)"</string>
+    <string name="mediasize_chinese_prc_1" msgid="4793232644980170500">"PRC 1 (102 x 165 мм)"</string>
+    <string name="mediasize_chinese_prc_2" msgid="5404109730975720670">"PRC 2 (102 x 176 мм)"</string>
+    <string name="mediasize_chinese_prc_3" msgid="1335092253339363526">"PRC 3 (125 x 176 мм)"</string>
+    <string name="mediasize_chinese_prc_4" msgid="9167997800486569834">"PRC 4 (110 x 208 мм)"</string>
+    <string name="mediasize_chinese_prc_5" msgid="845875168823541497">"PRC 5 (110 x 220 мм)"</string>
+    <string name="mediasize_chinese_prc_6" msgid="3220325667692648789">"PRC 6 (120 x 320 мм)"</string>
+    <string name="mediasize_chinese_prc_7" msgid="1776792138507038527">"PRC 7 (160 x 230 мм)"</string>
+    <string name="mediasize_chinese_prc_8" msgid="1417176642687456692">"PRC 8 (120 x 309 мм)"</string>
+    <string name="mediasize_chinese_prc_9" msgid="4785983473123798365">"PRC 9 (229 x 324 мм)"</string>
+    <string name="mediasize_chinese_prc_10" msgid="7847982299391851899">"PRC 10 (324 x 458 мм)"</string>
+    <string name="mediasize_chinese_prc_16k" msgid="262793383539980677">"PRC 16K (146 x 215 мм)"</string>
+    <string name="mediasize_chinese_om_pa_kai" msgid="5256815579447959814">"Pa Kai (146 x 215 мм)"</string>
+    <string name="mediasize_chinese_om_dai_pa_kai" msgid="7336412963441354407">"Dai Pa Kai (275 х 395 мм)"</string>
+    <string name="mediasize_chinese_om_jurro_ku_kai" msgid="6324465444100490742">"Jurro Ku Kai (275 x 395 мм)"</string>
+    <string name="mediasize_japanese_jis_b10" msgid="1787262845627694376">"JIS B10 (32 x 45 мм)"</string>
+    <string name="mediasize_japanese_jis_b9" msgid="3336035783663287470">"JIS B9 (45 x 64 мм)"</string>
+    <string name="mediasize_japanese_jis_b8" msgid="6195398299104345731">"JIS B8 (64 x 91 мм)"</string>
+    <string name="mediasize_japanese_jis_b7" msgid="1674621886902828884">"JIS B7 (91 x 128 мм)"</string>
+    <string name="mediasize_japanese_jis_b6" msgid="4170576286062657435">"JIS B6 (128 x 182 мм)"</string>
+    <string name="mediasize_japanese_jis_b5" msgid="4899297958100032533">"JIS B5 (182 x 257 мм)"</string>
+    <string name="mediasize_japanese_jis_b4" msgid="4213158129126666847">"JIS B4 (257 x 364 мм)"</string>
+    <string name="mediasize_japanese_jis_b3" msgid="8513715307410310696">"JIS B3 (364 x 515 мм)"</string>
+    <string name="mediasize_japanese_jis_b2" msgid="4777690211897131190">"JIS B2 (515 x 728 мм)"</string>
+    <string name="mediasize_japanese_jis_b1" msgid="4608142385457034603">"JIS B1 (728 x 1030 мм)"</string>
+    <string name="mediasize_japanese_jis_b0" msgid="7587108366572243991">"JIS B0 (1030 x 1456 мм)"</string>
+    <string name="mediasize_japanese_jis_exec" msgid="5244075432263649068">"JIS Exec (216 x 330 мм)"</string>
+    <string name="mediasize_japanese_chou4" msgid="4941652015032631361">"Chou4 (90 x 205 мм)"</string>
+    <string name="mediasize_japanese_chou3" msgid="6387319169263957010">"Chou3 (120 x 235 мм)"</string>
+    <string name="mediasize_japanese_chou2" msgid="1299112025415343982">"Chou2 (111,1 x 146 мм)"</string>
+    <string name="mediasize_japanese_hagaki" msgid="8070115620644254565">"Hagaki (100 x 148 мм)"</string>
+    <string name="mediasize_japanese_oufuku" msgid="6049065587307896564">"Oufuku (148 x 200 мм)"</string>
+    <string name="mediasize_japanese_kahu" msgid="6872696027560065173">"Kaku (240 x 322,1 мм)"</string>
+    <string name="mediasize_japanese_kaku2" msgid="2359077233775455405">"Kaku2 (240 x 332 мм)"</string>
+    <string name="mediasize_japanese_you4" msgid="2091777168747058008">"You4 (105 x 235 мм)"</string>
     <string name="mediasize_unknown_portrait" msgid="3088043641616409762">"Неизвестный вертикальный формат"</string>
     <string name="mediasize_unknown_landscape" msgid="4876995327029361552">"Неизвестный горизонтальный формат"</string>
     <string name="write_fail_reason_cancelled" msgid="7091258378121627624">"Печать отменена"</string>
@@ -1740,10 +1740,10 @@
     <string name="restr_pin_confirm_pin" msgid="8501523829633146239">"Введите новый PIN-код ещё раз"</string>
     <string name="restr_pin_create_pin" msgid="8017600000263450337">"Создайте PIN-код для изменения ограничений."</string>
     <string name="restr_pin_error_doesnt_match" msgid="2224214190906994548">"PIN-коды не совпадают. Повторите попытку."</string>
-    <string name="restr_pin_error_too_short" msgid="8173982756265777792">"PIN-код должен содержать не менее 4 символов."</string>
+    <string name="restr_pin_error_too_short" msgid="8173982756265777792">"PIN-код должен содержать не менее 4 символов."</string>
   <plurals name="restr_pin_countdown">
-    <item quantity="one" msgid="311050995198548675">"Повтор через 1 сек."</item>
-    <item quantity="other" msgid="4730868920742952817">"Повтор через <xliff:g id="COUNT">%d</xliff:g> сек."</item>
+    <item quantity="one" msgid="311050995198548675">"Повтор через 1 сек."</item>
+    <item quantity="other" msgid="4730868920742952817">"Повтор через <xliff:g id="COUNT">%d</xliff:g> сек."</item>
   </plurals>
     <string name="restr_pin_try_later" msgid="973144472490532377">"Повторите попытку позже."</string>
     <string name="immersive_mode_confirmation" msgid="7227416894979047467">"Чтобы вернуться в обычный режим, проведите пальцем вниз."</string>
@@ -1775,12 +1775,111 @@
     <string name="battery_saver_description" msgid="2510530476513605742">"Чтобы продлить время работы устройства от батареи, в режиме энергосбережения снижается производительность, а также ограничивается использование вибросигнала и фоновой передачи данных. Данные, требующие синхронизации, могут обновляться только когда вы откроете приложение.\n\nРежим энергосбережения автоматически отключается во время зарядки устройства."</string>
     <string name="downtime_condition_summary" msgid="8761776337475705749">"До отключения режима (в <xliff:g id="FORMATTEDTIME">%1$s</xliff:g>)"</string>
   <plurals name="zen_mode_duration_minutes">
-    <item quantity="one" msgid="9040808414992812341">"1 мин."</item>
-    <item quantity="other" msgid="6924190729213550991">"%d мин."</item>
+    <item quantity="one" msgid="9040808414992812341">"1 мин."</item>
+    <item quantity="other" msgid="6924190729213550991">"%d мин."</item>
   </plurals>
   <plurals name="zen_mode_duration_hours">
-    <item quantity="one" msgid="3480040795582254384">"1 ч."</item>
-    <item quantity="other" msgid="5408537517529822157">"%d ч."</item>
+    <item quantity="one" msgid="3480040795582254384">"1 ч."</item>
+    <item quantity="other" msgid="5408537517529822157">"%d ч."</item>
   </plurals>
     <string name="zen_mode_forever" msgid="4316804956488785559">"Бессрочно"</string>
+
+    <!-- kill app long press back -->
+    <string name="app_killed_message">Приложение закрыто</string>
+
+    <!-- Title of dialog to confirm rebooting. -->
+    <string name="reboot_title">Перезагрузка</string>
+
+    <!-- Reboot Confirmation Dialog.  When the user chooses to reboot the device, there will
+         be a confirmation dialog.  This is the message. -->
+    <string name="reboot_confirm" product="tablet">Ваш планшет будет перезагружен.</string>
+    <string name="reboot_confirm" product="default">Ваш телефон будет перезагружен.</string>
+
+    <!-- label for item that reboots the phone in phone options dialog -->
+    <string name="global_action_reboot">Перезагрузка</string>
+
+    <!-- label for item that screenshots in phone options dialog -->
+    <string name="global_action_screenshot">Скриншот</string>
+
+    <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
+    <string name="reboot_progress">Перезагрузка\u2026</string>
+
+    <!-- Reboot menu -->
+    <!-- Button to reboot the phone, within the Reboot Options dialog -->
+    <string name="reboot_reboot">Перезагрузка</string>
+    <!-- Button to reboot the phone into recovery, within the Reboot Options dialog -->
+    <string name="reboot_recovery">Рекавери</string>
+    <!-- Button to reboot the phone into bootloader, within the Reboot Options dialog -->
+    <string name="reboot_bootloader">Бутлоадер</string>
+    <!-- Button to soft reboot the device, within the Reboot Options dialog -->
+    <string name="reboot_soft">Мягкая перезагрузка</string>
+
+    <!-- Title of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgrouplab_security">Безопасность</string>
+    <!-- Description of a category of application permissions, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permgroupdesc_security">Разрешения, связанные с информацией о безопасности устройства.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessThemeService">доступ к сервису тем</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessThemeService">Позволяет приложению доступ к службе тем. Не должно быть необходимо для нормальных приложений.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readThemes">читать вашу информацию темы</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readThemesDesc">Приложение сможет читать ваши темы и
+        определять, какие темы вы применили.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_writeThemes">изменять ваши темы</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_writeThemesDesc">Приложение сможет добавлять новые темы и
+        изменить тему, которую вы применили.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_readPhoneBlacklist">читать черный список телефонов</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_readPhoneBlacklist">Приложение сможет считывать информацию о телефонных номерах, заблокированных для входящих вызовов или сообщений.</string>
+
+    <!-- [CHAR LIMIT=NONE] Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_changePhoneBlacklist">изменять черный список телефонов</string>
+    <!-- [CHAR LIMIT=NONE] Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_changePhoneBlacklist">Приложение сможет изменять телефонные номера, которые будут заблокированы для входящих вызовов или сообщений.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want the application to do this. -->
+    <string name="permlab_setKeyguardWallpaper">установить обои экрана блокировки</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_setKeyguardWallpaper">Приложение сможет изменять фон экрана блокировки.</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_recordScreen">Записывать содержимое которое отображается</string>
+
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_recordScreen">Приложение сможет записывать экран пользователя</string>
+
+    <!-- label for screen record item in phone options dialog -->
+    <string name="global_action_screen_record">Запись экрана</string>
+  
+    <!-- Theme installation error notification -->
+    <string name="theme_install_error_title">Ошибка установки темы</string>
+    <string name="theme_install_error_message">%s неудалось установить</string>
+
+    <!-- Privacy Guard -->
+    <string name="permlab_changePrivacyGuardState">Включить или отключить защищенный режим</string>
+    <string name="permdesc_changePrivacyGuardState">Позволяет приложению проверять, работает ли другое приложение с защищенным режимом. Когда приложение работает в защищенном режиме, оно не будет иметь доступа к персональным данным, такие как контакты, журналы вызовов, или сообщения.</string>
+    <string name="privacy_guard_notification">Защищенный режим активен</string>
+    <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> не получит доступ к личной информации</string>
+    <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> не получит доступ к разным разрешениям</string>
+    
+    <!-- Theme reset notification -->
+    <string name="theme_reset_notification_title">Сброс темы</string>
+    <string name="theme_reset_notification_body">Системная тема восстановлена из-за многочисленных ошибок приложения</string>
+
+    <!-- Slim Roms seekbar -->
+    <string name="default_string">По умолчанию</string>
+
+    <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permlab_accessTorchService">доступ к сервису фонарика</string>
+    <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
+    <string name="permdesc_accessTorchService">Позволяет приложению получить доступ к службе фонарика. Не должно быть необходимым для нормальных приложений.</string>
 </resources>
