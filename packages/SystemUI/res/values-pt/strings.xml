@@ -432,6 +432,7 @@
     <!-- Lockscreen shortcuts -->
     <string name="left_shortcut_hint">Deslize a direita para %1$s</string>
     <string name="right_shortcut_hint">Deslize a esquerda para %1$s</string>
+    <string name="quick_settings_lockscreen_label_enforced">Tela de bloqueio forçada</string>
 
     <!-- Dialog title for navigation bar button selection -->
     <string name="navbar_dialog_title">Atribua uma ação</string>
