@@ -254,5 +254,7 @@
     the NORMAL notification background to be dark and the text to be light, this boolean
     needs to be set to false, to prevent the doze notifications from being light -->
     <bool name="config_invert_colors_on_doze">true</bool>
-</resources>
 
+    <!-- Doze: shake accelerometer threshold minimum is 2 and maximum is 10-->
+    <integer name="doze_shake_accelerometer_threshold">10</integer>
+</resources>

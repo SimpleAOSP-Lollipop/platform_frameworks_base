@@ -2139,4 +2139,7 @@
 
   <!-- Storage -->
   <java-symbol type="string" name="extmedia_format_message_cm" />
+
+  <!-- Doze Settings -->
+  <java-symbol type="bool" name="config_dozeUseAccelerometer" />
 </resources>
