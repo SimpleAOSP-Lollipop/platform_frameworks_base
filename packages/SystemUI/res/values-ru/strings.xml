@@ -359,4 +359,110 @@
     <string name="hidden_notifications_setup" msgid="41079514801976810">"Настроить"</string>
     <string name="muted_by" msgid="6147073845094180001">"Звук отключен приложением \"<xliff:g id="THIRD_PARTY">%1$s</xliff:g>\""</string>
     <string name="zen_mode_and_condition" msgid="4462471036429759903">"<xliff:g id="ZEN_MODE">%1$s</xliff:g>. <xliff:g id="EXIT_CONDITION">%2$s</xliff:g>."</string>
+
+    <!-- Screenshot delete -->
+    <string name="screenshot_delete_action">Удалить</string>
+    <string name="screenshot_delete_confirmation">Скриншот удален</string>
+
+    <!-- The text for the button in the notification window-shade that clears
+         all of the currently visible notifications. [CHAR LIMIT=10]-->
+    <string name="clear_recents">Удалить все недавние</string>
+
+    <!-- Development shortcuts -->
+    <string name="advanced_dev_option_wipe_app">Очистить данные</string>
+    <string name="advanced_dev_option_force_stop">Остановить</string>
+    <string name="advanced_dev_option_uninstall">Удалить</string>
+
+    <!-- Content description of the data connection type HSPA+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_data_connection_HP">HSPA+</string>
+
+    <!-- Weather string format in expanded statusbar header -->
+    <string name="status_bar_expanded_header_weather_format"><xliff:g id="temp">%1$s</xliff:g> - <xliff:g id="condition">%2$s</xliff:g></string>
+
+    <!-- QS location sensors -->
+    <!-- Content description of the location tile in quick settings when on, battery saving mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_battery_saving">Отправка местоположения: режим экономии энергии.</string>
+    <!-- Content description of the location tile in quick settings when on, sensors only mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_gps_only">Отправка местоположения: только по датчикам.</string>
+    <!-- Content description of the location tile in quick settings when on, high accuracy mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_high_accuracy">Отправка местоположения: высокая точность.</string>
+
+
+    <!-- QuickSettings: Location detail panel title [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_detail_title">Местоположение</string>
+    <!-- QuickSettings: Location (On, low-power) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_battery_saving_label">Экономия энергии</string>
+    <!-- QuickSettings: Location (On, gps-only) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_gps_only_label">Только устройство</string>
+    <!-- QuickSettings: Location (On, high-accuracy) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_high_accuracy_label">Высокая точность</string>
+    
+    <!-- NFC qs tile -->
+    <string name="quick_settings_nfc_label">NFC</string>
+
+    <!-- Compass qs tile -->
+    <string name="quick_settings_compass_label">Компас</string>
+    <string name="quick_settings_compass_value" translatable="false"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Инициализация\u2026</string>
+
+    <!-- Lockscreen qs tile -->
+    <string name="quick_settings_lockscreen_label">Экран блокировки</string>
+
+    <!-- LTE qs tile -->
+    <string name="quick_settings_lte_label">LTE</string>
+
+    <!-- Heads up qs tile -->
+    <string name="quick_settings_heads_up_on">Всплывающие включены</string>
+    <string name="quick_settings_heads_up_off">Всплывающие выключены</string>
+
+    <!-- Screen timeout qs tile -->
+    <string name="quick_settings_screen_timeout_detail_title">Тайм-аут экрана</string>
+
+    <!-- Screenshot qs tile -->
+    <string name="quick_settings_screenshot">Скриншот</string>
+
+    <!-- Sync qs tile -->
+    <string name="quick_settings_sync">Синхронизация</string>
+    <string name="quick_settings_sync_off">Синхронизация отключена</string>
+
+    <!-- Heads up toast -->
+    <string name="heads_up_enabled">Всплывающие уведомления включены</string>
+    <string name="heads_up_disabled">Всплывающие уведомления отключены</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="left_shortcut_hint">Жест вправо для %1$s</string>
+    <string name="right_shortcut_hint">Жест влево для %1$s</string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_dialog_title">Выберите действие для назначения</string>
+    <string name="navbar_home_button">Кнопка домой</string>
+    <string name="navbar_recent_button">Кнопка недавние</string>
+    <string name="navbar_search_button">Кнопка поиска</string>
+    <string name="navbar_back_button">Кнопка назад</string>
+    <string name="navbar_empty_button">Пустая кнопка</string>
+    <string name="navbar_menu_conditional_button">Меню (автоскрывается)</string>
+    <string name="navbar_menu_always_button">Меню (всегда показывается)</string>
+    <string name="navbar_menu_big_button">Кнопка меню</string>
+
+    <!-- Navigation bar cursor -->
+    <string name="accessibility_dpad_left">Курсор влево</string>
+    <string name="accessibility_dpad_right">Курсор вправо</string>
+
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Ярлыки быстрого запуска</string>
+    <string name="navring_target_reset_message">Удалить все созданные пользователем ярлыки панели навигации и восстановить по умолчанию?</string>
+    <string name="navring_target_reset">Ярлыки панели навигации сбрасываются на умолчания</string>
+    <string name="navring_action_open_ime_switcher">Открыть выбор способа ввода</string>
+    <string name="navring_action_kill_app">Закрыть приложение</string>
+    <string name="navring_action_none">Нету</string>
+    <string name="navring_action_take_screenshot">Сделать скриншот</string>
+    <string name="navring_action_ring_vibrate">Звук/Вибрация</string>
+    <string name="navring_action_ring_silent">Звук/Без звука</string>
+    <string name="navring_action_ring_vibrate_silent">Звук/Вибрация/Без звука</string>
+    <string name="navring_action_screen_off">Выключить экран</string>
+    <string name="navring_action_torch">Фонарик</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Выбрать действие</string>
+    <string name="select_application">Выбрать приложение</string>
+    <string name="lockscreen_target_empty">Пусто</string>
 </resources>
