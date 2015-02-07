@@ -55,4 +55,36 @@
     <string name="toast_no_application" msgid="1339885974067891667">"Не удалось открыть файл"</string>
     <string name="toast_failed_delete" msgid="2180678019407244069">"Не удалось удалить некоторые документы"</string>
     <string name="share_via" msgid="8966594246261344259">"Поделиться"</string>
+	
+    <!-- Action bar title when the app is in standalone (file manager) mode [CHAR LIMIT=32] -->
+    <string name="title_standalone">Файлы</string>
+
+    <!-- Toast shown after successfully deleting files -->
+    <string name="toast_success_delete">Файлы удалены</string>
+
+    <!-- Title of the Delete confirmation dialog -->
+    <string name="dialog_delete_confirm_title">Удалить файлы?</string>
+
+    <!-- Text shown in a toast when the user copies files -->
+    <plurals name="files_copied">
+        <item quantity="one">Файл был скопирован в буфер обмена</item>
+        <item quantity="other">%d файлов скопировано в буфер обмена</item>
+    </plurals>
+
+    <!-- Text shown in a toast when the user pastes files -->
+    <plurals name="files_pasted">
+        <item quantity="one">Файл был вставлен. Загрузка может быть завершена в фоновом режиме.</item>
+        <item quantity="other">%d файлов вставлено. Загрузка может быть завершена в фоновом режиме.</item>
+    </plurals>
+
+    <!-- Text show in the progress dialog while files are being copied -->
+    <string name="copy_in_progress">Копирование...</string>
+
+    <!-- Text show in the progress dialog while files are being deleted -->
+    <string name="delete_in_progress">Удаление...</string>
+
+    <plurals name="dialog_delete_confirm_message">
+        <item quantity="one">Этот файл будет навсегда удален!</item>
+        <item quantity="other">Это окончательно удалит %d выбранных файлов!</item>
+    </plurals>
 </resources>
