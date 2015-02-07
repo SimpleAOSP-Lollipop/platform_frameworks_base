@@ -1803,7 +1803,7 @@
     <string name="global_action_screenshot">Capture d\'écran</string>
 
     <!-- Reboot Progress Dialog. This is shown if the user chooses to reboot the phone. -->
-    <string name="reboot_progress">redémarrage\u2026</string>
+    <string name="reboot_progress">Redémarrage\u2026</string>
 
     <!-- Reboot menu -->
     <!-- Button to reboot the phone, within the Reboot Options dialog -->
