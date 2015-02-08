@@ -1197,29 +1197,31 @@ public class NetworkControllerImpl extends BroadcastReceiver
             // Now for things that should only be shown when actually using mobile data.
             if (mDataConnected) {
                 combinedSignalIconId = mDataSignalIconId;
-
-                combinedLabel = mobileLabel;
-                combinedSignalIconId = mDataSignalIconId; // set by updateDataIcon()
-                mContentDescriptionCombinedSignal = mContentDescriptionDataType;
                 if (showActivityIcons()) {
                     switch (mDataActivity) {
-                    case TelephonyManager.DATA_ACTIVITY_IN:
-                        mMobileActivityIconId = R.drawable.stat_sys_signal_in;
-                        break;
-                    case TelephonyManager.DATA_ACTIVITY_OUT:
-                        mMobileActivityIconId = R.drawable.stat_sys_signal_out;
-                        break;
-                    case TelephonyManager.DATA_ACTIVITY_INOUT:
-                        mMobileActivityIconId = R.drawable.stat_sys_signal_inout;
-                        break;
-                    default:
-                        mMobileActivityIconId = 0;
-                        break;
+                        case TelephonyManager.DATA_ACTIVITY_IN:
+                            mMobileActivityIconId = R.drawable.stat_sys_signal_in;
+                            break;
+                        case TelephonyManager.DATA_ACTIVITY_OUT:
+                            mMobileActivityIconId = R.drawable.stat_sys_signal_out;
+                            break;
+                        case TelephonyManager.DATA_ACTIVITY_INOUT:
+                            mMobileActivityIconId = R.drawable.stat_sys_signal_inout;
+                            break;
+                        default:
+                            mMobileActivityIconId = 0;
+                            break;
                     }
-                    combinedActivityIconId = mMobileActivityIconId;
                 } else {
                     mMobileActivityIconId = 0;
                 }
+
+                combinedLabel = mobileLabel;
+                combinedActivityIconId = mMobileActivityIconId;
+                combinedSignalIconId = mDataSignalIconId; // set by updateDataIcon()
+                mContentDescriptionCombinedSignal = mContentDescriptionDataType;
+            } else {
+                mMobileActivityIconId = 0;
             }
         }
 
@@ -1247,6 +1249,8 @@ public class NetworkControllerImpl extends BroadcastReceiver
                         mWifiActivityIconId = R.drawable.stat_sys_signal_none;
                         break;
                     }
+                } else {
+                    mWifiActivityIconId = 0;
                 }
             }
 
@@ -1502,6 +1506,11 @@ public class NetworkControllerImpl extends BroadcastReceiver
                     v.setContentDescription(mContentDescriptionDataType);
                 }
             }
+        }
+
+        // the data direction overlay
+        if (mLastDataDirectionOverlayIconId != combinedActivityIconId) {
+            mLastDataDirectionOverlayIconId = combinedActivityIconId;
         }
 
         // the combinedLabel in the notification panel
