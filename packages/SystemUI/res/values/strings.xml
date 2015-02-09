@@ -987,6 +987,10 @@
     <!-- Screen off qs tile -->
     <string name="quick_settings_screen_off">Screen off</string>
 
+    <!-- Expanded desktop qs tile -->
+    <string name="quick_settings_expanded_desktop">Expanded</string>
+    <string name="quick_settings_expanded_desktop_off">Normal</string>
+
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Heads up notifications are enabled</string>
     <string name="heads_up_disabled">Heads up notifications are disabled</string>
