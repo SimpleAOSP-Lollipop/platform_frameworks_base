@@ -422,6 +422,20 @@
     <!-- Sync qs tile -->
     <string name="quick_settings_sync">Synchronisation</string>
     <string name="quick_settings_sync_off">Synchronisation éteinte</string>
+    
+    <!-- Brightness qs tile -->
+    <string name="quick_settings_brightness">Luminosité</string>
+    
+    <!-- Battery saver qs tile -->
+    <string name="quick_settings_battery_saver">Économiseur de batterie</string>
+    <string name="quick_settings_battery_saver_off">Économiseur de batterie éteint</string>
+    
+    <!-- Screen off qs tile -->
+    <string name="quick_settings_screen_off">Éteindre l\'écran</string>
+    
+    <!-- Expanded desktop qs tile -->
+    <string name="quick_settings_expanded_desktop">Étendu</string>
+    <string name="quick_settings_expanded_desktop_off">Normal</string>
 
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Les notifications flottantes sont activées</string>
