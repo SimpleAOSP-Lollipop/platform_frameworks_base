@@ -424,6 +424,20 @@
     <!-- Sync qs tile -->
     <string name="quick_settings_sync">Синхронизация</string>
     <string name="quick_settings_sync_off">Синхронизация отключена</string>
+    
+    <!-- Brightness qs tile -->
+    <string name="quick_settings_brightness">Яркость</string>
+    
+    <!-- Battery saver qs tile -->
+    <string name="quick_settings_battery_saver">Экономия энергии</string>
+    <string name="quick_settings_battery_saver_off">Экономия энергии выключена</string>
+    
+    <!-- Screen off qs tile -->
+    <string name="quick_settings_screen_off">Выключить экран</string>
+    
+    <!-- Expanded desktop qs tile -->
+    <string name="quick_settings_expanded_desktop">Расширенный</string>
+    <string name="quick_settings_expanded_desktop_off">Обычный</string>
 
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Всплывающие уведомления включены</string>
