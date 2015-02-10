@@ -1425,6 +1425,7 @@ public abstract class BaseStatusBar extends SystemUI implements
             } catch (NameNotFoundException e) {
                 title.setText(entry.notification.getPackageName());
             }
+            title.setTextColor(R.color.exposed_primary_text_light);
 
             final ImageView icon = (ImageView) publicViewLocal.findViewById(R.id.icon);
             final ImageView profileBadge = (ImageView) publicViewLocal.findViewById(
@@ -1469,6 +1470,7 @@ public abstract class BaseStatusBar extends SystemUI implements
                 time.setVisibility(View.VISIBLE);
                 time.setTime(entry.notification.getNotification().when);
             }
+            time.setTextColor(R.color.exposed_primary_text_light);
 
             final TextView text = (TextView) publicViewLocal.findViewById(R.id.text);
             if (text != null) {
