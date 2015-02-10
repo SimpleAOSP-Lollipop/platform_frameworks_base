@@ -1256,6 +1256,7 @@ public class NotificationManagerService extends SystemService {
 
         @Override
         public int getShowNotificationForPackageOnKeyguard(String pkg, int uid) {
+            enforceSystemOrSystemUI("INotificationManager.getShowNotificationForPackageOnKeyguard");
             return mRankingHelper.getShowNotificationForPackageOnKeyguard(pkg, uid);
         }
 
