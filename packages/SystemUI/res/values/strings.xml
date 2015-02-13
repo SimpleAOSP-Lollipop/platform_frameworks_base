@@ -221,6 +221,8 @@
     <string name="phone_label">open phone</string>
     <!-- Click action label for accessibility for the phone button. [CHAR LIMIT=NONE] -->
     <string name="camera_label">open camera</string>
+    <!-- Content description of the power button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_power">Power</string>
 
     <!-- Content description of the switch input method button for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
     <string name="accessibility_ime_switch_button">Switch input method button.</string>
@@ -1010,6 +1012,7 @@
     <string name="navbar_menu_conditional_button">Menu (autoHide) button</string>
     <string name="navbar_menu_always_button">Menu (alwaysShow) button</string>
     <string name="navbar_menu_big_button">Menu button</string>
+    <string name="navbar_power_button">Power button</string>
 
     <!-- Navigation bar cursor -->
     <string name="accessibility_dpad_left">Cursor left</string>
