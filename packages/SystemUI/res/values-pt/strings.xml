@@ -458,6 +458,7 @@
     <string name="navbar_menu_conditional_button">Botão Menu auto-ocultar</string>
     <string name="navbar_menu_always_button">Botão Menu sempre mostrar</string>
     <string name="navbar_menu_big_button">Botão Menu</string>
+    <string name="navbar_power_button">Botão energia</string>
 
     <!-- Navigation bar cursor -->
     <string name="accessibility_dpad_left">Cursor esquerdo</string>
