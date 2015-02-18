@@ -434,10 +434,10 @@
     <string name="quick_settings_battery_saver_off">Economia de bateria desativada</string>
 
     <!-- Screen off qs tile -->
-    <string name="quick_settings_screen_off">Apagar tela</string>
+    <string name="quick_settings_screen_off">Desligar tela</string>
 
     <!-- Expanded desktop qs tile -->
-    <string name="quick_settings_expanded_desktop">Área de trabalho expandida</string>
+    <string name="quick_settings_expanded_desktop">Tela expandida</string>
     <string name="quick_settings_expanded_desktop_off">Normal</string>
 
     <!-- Heads up toast -->
