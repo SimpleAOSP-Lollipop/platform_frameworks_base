@@ -1809,9 +1809,9 @@
     <!-- Button to reboot the phone, within the Reboot Options dialog -->
     <string name="reboot_reboot">Перезагрузка</string>
     <!-- Button to reboot the phone into recovery, within the Reboot Options dialog -->
-    <string name="reboot_recovery">Рекавери</string>
+    <string name="reboot_recovery">Режим восстановления</string>
     <!-- Button to reboot the phone into bootloader, within the Reboot Options dialog -->
-    <string name="reboot_bootloader">Бутлоадер</string>
+    <string name="reboot_bootloader">Загрузчик</string>
     <!-- Button to soft reboot the device, within the Reboot Options dialog -->
     <string name="reboot_soft">Мягкая перезагрузка</string>
 
