@@ -357,4 +357,126 @@
     <string name="hidden_notifications_setup" msgid="41079514801976810">"Configurar"</string>
     <string name="muted_by" msgid="6147073845094180001">"Silenciado por <xliff:g id="THIRD_PARTY">%1$s</xliff:g>"</string>
     <string name="zen_mode_and_condition" msgid="4462471036429759903">"<xliff:g id="ZEN_MODE">%1$s</xliff:g>. <xliff:g id="EXIT_CONDITION">%2$s</xliff:g>"</string>
+
+    <!-- Screenshot delete -->
+    <string name="screenshot_delete_action">Eliminar</string>
+    <string name="screenshot_delete_confirmation">Captura de pantalla eliminada</string>
+
+    <!-- The text for the button in the notification window-shade that clears
+         all of the currently visible notifications. [CHAR LIMIT=10]-->
+    <string name="clear_recents">Cerrar todas las recientes</string>
+
+    <!-- Development shortcuts -->
+    <string name="advanced_dev_option_wipe_app">Borrar datos</string>
+    <string name="advanced_dev_option_force_stop">Forzar detención</string>
+    <string name="advanced_dev_option_uninstall">Desinstalar</string>
+
+    <!-- Content description of the data connection type HSPA+ for accessibility (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_data_connection_HP">HSPA+</string>
+
+    <!-- Weather string format in expanded statusbar header -->
+    <string name="status_bar_expanded_header_weather_format"><xliff:g id="temp">%1$s</xliff:g> - <xliff:g id="condition">%2$s</xliff:g></string>
+
+    <!-- QS location sensors -->
+    <!-- Content description of the location tile in quick settings when on, battery saving mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_battery_saving">Modo de ubicación: ahorro de batería.</string>
+    <!-- Content description of the location tile in quick settings when on, sensors only mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_gps_only">Modo de ubicación: solo sensores.</string>
+    <!-- Content description of the location tile in quick settings when on, high accuracy mode (not shown on the screen). [CHAR LIMIT=NONE] -->
+    <string name="accessibility_quick_settings_location_high_accuracy">Modo de ubicación: alta precisión.</string>
+
+
+    <!-- QuickSettings: Location detail panel title [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_detail_title">Modo de ubicación</string>
+    <!-- QuickSettings: Location (On, low-power) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_battery_saving_label">Ahorro de batería</string>
+    <!-- QuickSettings: Location (On, gps-only) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_gps_only_label">Solo dispositivo</string>
+    <!-- QuickSettings: Location (On, high-accuracy) [CHAR LIMIT=NONE] -->
+    <string name="quick_settings_location_high_accuracy_label">Alta precisión</string>
+    
+    <!-- NFC qs tile -->
+    <string name="quick_settings_nfc_label">NFC</string>
+
+    <!-- Compass qs tile -->
+    <string name="quick_settings_compass_label">Brújula</string>
+    <string name="quick_settings_compass_value" translatable="false"><xliff:g id="degrees">%1$.0f</xliff:g>\u00b0 <xliff:g id="direction">%2$s</xliff:g></string>
+    <string name="quick_settings_compass_init">Iniciando\u2026</string>
+
+    <!-- Lockscreen qs tile -->
+    <string name="quick_settings_lockscreen_label">Pantalla de bloqueo</string>
+
+    <!-- LTE qs tile -->
+    <string name="quick_settings_lte_label">LTE</string>
+
+    <!-- Heads up qs tile -->
+    <string name="quick_settings_heads_up_on">Notificaciones flotantes activadas</string>
+    <string name="quick_settings_heads_up_off">Sin interrupciones</string>
+
+    <!-- Screen timeout qs tile -->
+    <string name="quick_settings_screen_timeout_detail_title">Tiempo de espera de la pantalla</string>
+
+    <!-- Screenshot qs tile -->
+    <string name="quick_settings_screenshot">Captura de pantalla</string>
+
+    <!-- Sync qs tile -->
+    <string name="quick_settings_sync">Sincronización</string>
+    <string name="quick_settings_sync_off">Sincronización apagada</string>
+
+    <!-- Brightness qs tile -->
+    <string name="quick_settings_brightness">Brillo</string>
+
+    <!-- Battery saver qs tile -->
+    <string name="quick_settings_battery_saver">Ahorro de batería</string>
+    <string name="quick_settings_battery_saver_off">Ahorro de batería apagado</string>
+
+    <!-- Screen off qs tile -->
+    <string name="quick_settings_screen_off">Apagado de pantalla</string>
+
+    <!-- Expanded desktop qs tile -->
+    <string name="quick_settings_expanded_desktop">Expandido</string>
+    <string name="quick_settings_expanded_desktop_off">Normal</string>
+
+    <!-- Heads up toast -->
+    <string name="heads_up_enabled">Las notificaciones flotantes están activadas</string>
+    <string name="heads_up_disabled">Las notificaciones flotantes están desactivadas</string>
+
+    <!-- Lockscreen shortcuts -->
+    <string name="left_shortcut_hint">Deslizar a la derecha para %1$s</string>
+    <string name="right_shortcut_hint">Deslizar a la izquierda para %1$s</string>
+    <string name="quick_settings_lockscreen_label_enforced">Pantalla de bloqueo forzada</string>
+
+    <!-- Dialog title for navigation bar button selection -->
+    <string name="navbar_dialog_title">Escoger acción para asignar</string>
+    <string name="navbar_home_button">Botón de inicio</string>
+    <string name="navbar_recent_button">Botón de reciente</string>
+    <string name="navbar_search_button">Botón de búsqueda</string>
+    <string name="navbar_back_button">Botón de atrás</string>
+    <string name="navbar_empty_button">Botón vacío</string>
+    <string name="navbar_menu_conditional_button">Botón de menú (ocultar automáticamente)</string>
+    <string name="navbar_menu_always_button">Botón de menú (mostrar siempre)</string>
+    <string name="navbar_menu_big_button">Botón de menú</string>
+    <string name="navbar_power_button">Botón de encendido</string>
+
+    <!-- Navigation bar cursor -->
+    <string name="accessibility_dpad_left">Cursor izquierdo</string>
+    <string name="accessibility_dpad_right">Cursor derecho</string>
+
+    <!-- Navigation ring shortcuts -->
+    <string name="navigation_ring_title">Accesos directo de inicio rápido</string>
+    <string name="navring_target_reset_message">¿Eliminar todos los accesos directos de la barra de navegación creados por el usuario y restaurar a los valores por defecto?</string>
+    <string name="navring_target_reset">Accesos directo de la barra de navegación restaurados a los valores por defecto</string>
+    <string name="navring_action_open_ime_switcher">Abrir elección de teclado</string>
+    <string name="navring_action_kill_app">Cerrar aplicación</string>
+    <string name="navring_action_none">Nada</string>
+    <string name="navring_action_take_screenshot">Tomar captura de pantalla</string>
+    <string name="navring_action_ring_vibrate">Tono/Vibración</string>
+    <string name="navring_action_ring_silent">Tono/Silencio</string>
+    <string name="navring_action_ring_vibrate_silent">Tono/Vibración/Silencio</string>
+    <string name="navring_action_screen_off">Apagado de pantalla</string>
+    <string name="navring_action_torch">Interruptor de linterna</string>
+    <string name="navring_action_google_now">Google Now</string>
+    <string name="navring_choose_action_title">Escoger acción</string>
+    <string name="select_application">Seleccionar aplicación</string>
+    <string name="lockscreen_target_empty">Vacío</string>
 </resources>
