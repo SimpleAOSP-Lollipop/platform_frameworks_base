@@ -1883,4 +1883,9 @@
     <string name="permlab_accessTorchService">Acesso ao serviço da tocha</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_accessTorchService">Permite que um aplicativo acesse o serviço da tocha. Nunca deve ser necessário para um aplicativo normal.</string>
+
+    <!-- See EXTMEDIA_FORMAT.   This is the message. [CHAR LIMIT=NONE] -->
+    <string name="extmedia_format_message_cm" product="nosdcard">Todos os dados armazenados no armazenamento USB (em \'%1$s\') serão apagados. Não é possível\'reverter essa ação!</string>
+    <!-- See EXTMEDIA_FORMAT.   This is the message. -->
+    <string name="extmedia_format_message_cm" product="default">Todos os dados armazenados no cartão (em \'%1$s\') serão apagados. Não é possível\'reverter essa ação!</string>
 </resources>
