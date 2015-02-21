@@ -1876,9 +1876,6 @@
     <string name="theme_reset_notification_title">Redefinição de tema</string>
     <string name="theme_reset_notification_body">Tema do sistema redefinido devido a várias falhas do aplicativo</string>
 
-    <!-- Slim Roms seekbar -->
-    <string name="default_string">Padrão</string>
-
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_accessTorchService">Acesso ao serviço da tocha</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->

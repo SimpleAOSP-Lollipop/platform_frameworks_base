@@ -1875,9 +1875,6 @@
     <!-- Theme reset notification -->
     <string name="theme_reset_notification_title">Réinitialisation du thème</string>
     <string name="theme_reset_notification_body">Le thème système est restauré en raison de multiples plantages d\'applications</string>
-
-    <!-- Slim Roms seekbar -->
-    <string name="default_string">Par défaut</string>
 	
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_accessTorchService">Service d\'accès de la torche</string>
