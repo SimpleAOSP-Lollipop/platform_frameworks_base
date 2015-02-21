@@ -444,19 +444,19 @@
     <string name="heads_up_disabled">Всплывающие уведомления отключены</string>
 
     <!-- Lockscreen shortcuts -->
-    <string name="left_shortcut_hint">Жест вправо для %1$s</string>
-    <string name="right_shortcut_hint">Жест влево для %1$s</string>
+    <string name="left_shortcut_hint">Проведите вправо для %1$s</string>
+    <string name="right_shortcut_hint">Проведите влево для %1$s</string>
 
     <!-- Dialog title for navigation bar button selection -->
-    <string name="navbar_dialog_title">Выберите действие для назначения</string>
-    <string name="navbar_home_button">Кнопка домой</string>
-    <string name="navbar_recent_button">Кнопка недавние</string>
-    <string name="navbar_search_button">Кнопка поиска</string>
-    <string name="navbar_back_button">Кнопка назад</string>
+    <string name="navbar_dialog_title">Выберите действие</string>
+    <string name="navbar_home_button">Домой</string>
+    <string name="navbar_recent_button">Запущ. приложения</string>
+    <string name="navbar_search_button">Поиск</string>
+    <string name="navbar_back_button">Назад</string>
     <string name="navbar_empty_button">Пустая кнопка</string>
-    <string name="navbar_menu_conditional_button">Меню (автоскрывается)</string>
-    <string name="navbar_menu_always_button">Меню (всегда показывается)</string>
-    <string name="navbar_menu_big_button">Кнопка меню</string>
+    <string name="navbar_menu_conditional_button">Меню (если доступно)</string>
+    <string name="navbar_menu_always_button">Меню (всегда)</string>
+    <string name="navbar_menu_big_button">Меню</string>
     <string name="navbar_power_button">Меню питания</string>
 
     <!-- Navigation bar cursor -->
@@ -465,19 +465,19 @@
 
     <!-- Navigation ring shortcuts -->
     <string name="navigation_ring_title">Ярлыки быстрого запуска</string>
-    <string name="navring_target_reset_message">Удалить все созданные пользователем ярлыки панели навигации и восстановить по умолчанию?</string>
-    <string name="navring_target_reset">Ярлыки панели навигации сбрасываются на умолчания</string>
-    <string name="navring_action_open_ime_switcher">Открыть выбор способа ввода</string>
+    <string name="navring_target_reset_message">Удалить пользовательские настройки ярлыков панели навигации и восстановить стандартные?</string>
+    <string name="navring_target_reset">Восстановлены стандартные ярлыки панели навигации</string>
+    <string name="navring_action_open_ime_switcher">Выбор способа ввода</string>
     <string name="navring_action_kill_app">Закрыть приложение</string>
-    <string name="navring_action_none">Нету</string>
+    <string name="navring_action_none">Ничего</string>
     <string name="navring_action_take_screenshot">Сделать скриншот</string>
     <string name="navring_action_ring_vibrate">Звук/Вибрация</string>
-    <string name="navring_action_ring_silent">Звук/Без звука</string>
-    <string name="navring_action_ring_vibrate_silent">Звук/Вибрация/Без звука</string>
-    <string name="navring_action_screen_off">Выключить экран</string>
+    <string name="navring_action_ring_silent">Звук/Беззвучный</string>
+    <string name="navring_action_ring_vibrate_silent">Звук/Вибрация/Беззвучный</string>
+    <string name="navring_action_screen_off">Отключить экран</string>
     <string name="navring_action_torch">Фонарик</string>
     <string name="navring_action_google_now">Google Now</string>
-    <string name="navring_choose_action_title">Выбрать действие</string>
-    <string name="select_application">Выбрать приложение</string>
+    <string name="navring_choose_action_title">Выбор действия</string>
+    <string name="select_application">Выбор приложения</string>
     <string name="lockscreen_target_empty">Пусто</string>
 </resources>
