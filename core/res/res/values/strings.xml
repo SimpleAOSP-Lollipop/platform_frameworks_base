@@ -4958,9 +4958,6 @@
     <string name="privacy_guard_notification_detail"><xliff:g id="app">%1$s</xliff:g> will not be able to access personal data</string>
     <string name="privacy_guard_custom_notification_detail"><xliff:g id="app">%1$s</xliff:g> will not be able to access custom permissions</string>
 
-    <!-- Slim Roms seekbar -->
-    <string name="default_string">Default</string>
-
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_accessTorchService">access torch service</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->

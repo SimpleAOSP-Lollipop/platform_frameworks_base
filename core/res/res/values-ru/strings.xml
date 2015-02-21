@@ -1880,9 +1880,6 @@
     <string name="theme_reset_notification_title">Тема отключена</string>
     <string name="theme_reset_notification_body">Из-за сбоев приложений восстановлена стандартная тема.</string>
 
-    <!-- Slim Roms seekbar -->
-    <string name="default_string">По умолчанию</string>
-
     <!-- Title of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permlab_accessTorchService">доступ к службе фонарика</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
