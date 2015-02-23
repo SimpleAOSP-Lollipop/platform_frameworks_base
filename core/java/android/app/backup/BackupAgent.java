@@ -105,7 +105,7 @@ import java.util.concurrent.CountDownLatch;
  */
 public abstract class BackupAgent extends ContextWrapper {
     private static final String TAG = "BackupAgent";
-    private static final boolean DEBUG = false;
+    private static final boolean DEBUG = true;
 
     /** @hide */
     public static final int TYPE_EOF = 0;
