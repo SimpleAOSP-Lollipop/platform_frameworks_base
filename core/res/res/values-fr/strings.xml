@@ -1880,4 +1880,9 @@
     <string name="permlab_accessTorchService">Service d\'accès de la torche</string>
     <!-- Description of an application permission, listed so the user can choose whether they want to allow the application to do this. -->
     <string name="permdesc_accessTorchService">Permet à une application d\'accéder au service de la torche. Il ne devrait jamais être nécessaire pour les applications normales.</string>
+
+    <!-- See EXTMEDIA_FORMAT.   This is the message. [CHAR LIMIT=NONE] -->
+    <string name="extmedia_format_message_cm" product="nosdcard">Toutes les données sur votre stockage USB (sous le chemin d\'accès \'%1$s\') seront effacées. Cette action est irréversible !</string>
+    <!-- See EXTMEDIA_FORMAT.   This is the message. -->
+    <string name="extmedia_format_message_cm" product="default">Toutes les données sur votre carte (sous le chemin d\'accès \'%1$s\') seront effacées. Cette action est irréversible !</string>
 </resources>
