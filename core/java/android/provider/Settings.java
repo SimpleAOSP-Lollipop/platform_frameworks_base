@@ -5692,11 +5692,6 @@ public final class Settings {
          */
         public static final String SLEEP_TIMEOUT = "sleep_timeout";
 
-        /** Protected Components
-         * @hide
-         */
-        public static final String PROTECTED_COMPONENTS = "protected_components";
-
         /**
           * Whether to allow killing of the foreground app by long-pressing the Back button
           * @hide
