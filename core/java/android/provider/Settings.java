@@ -2092,6 +2092,7 @@ public final class Settings {
 
         /**
          * Option to hide the Bluetooth icon in the status bar when disconnected.
+	 * @hide
          */
         public static final String SHOW_BLUETOOTH_ICON = "show_bluetooth_icon";
 
