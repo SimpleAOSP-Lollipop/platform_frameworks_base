@@ -163,6 +163,11 @@ public class PhoneStatusBarPolicy {
         mContext.getContentResolver().registerContentObserver(
                 Settings.System.getUriFor(Settings.System.SHOW_ALARM_ICON),
                 false, mAlarmIconObserver);
+                
+        mBluetoothIconObserver.onChange(true);
+        mContext.getContentResolver().registerContentObserver(
+                Settings.System.getUriFor(Settings.System.SHOW_BLUETOOTH_ICON),
+                false, mBluetoothIconObserver);      
     }
 
     private ContentObserver mAlarmIconObserver = new ContentObserver(null) {
