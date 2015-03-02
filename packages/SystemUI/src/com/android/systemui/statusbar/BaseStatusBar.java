@@ -130,7 +130,7 @@ public abstract class BaseStatusBar extends SystemUI implements
 
     protected static final boolean ENABLE_HEADS_UP = true;
     // scores above this threshold should be displayed in heads up mode.
-    protected static final int INTERRUPTION_THRESHOLD = 1;
+    protected static final int INTERRUPTION_THRESHOLD = 10;
     protected static final String SETTING_HEADS_UP_TICKER = "ticker_gets_heads_up";
 
     // Should match the value in PhoneWindowManager
@@ -178,6 +178,7 @@ public abstract class BaseStatusBar extends SystemUI implements
     protected boolean mUseHeadsUp = false;
     protected boolean mHeadsUpTicker = false;
     protected boolean mDisableNotificationAlerts = false;
+    protected boolean mHeadsUpUserEnabled = false;
 
     protected DevicePolicyManager mDevicePolicyManager;
     protected IDreamManager mDreamManager;
@@ -238,6 +239,10 @@ public abstract class BaseStatusBar extends SystemUI implements
     @Override  // NotificationData.Environment
     public boolean isDeviceProvisioned() {
         return mDeviceProvisioned;
+    }
+
+    public Handler getHandler() {
+        return mHandler != null ? mHandler : createHandler();
     }
 
     protected final ContentObserver mSettingsObserver = new ContentObserver(mHandler) {
@@ -2077,6 +2082,12 @@ public abstract class BaseStatusBar extends SystemUI implements
         }
 
         // some predicates to make the boolean logic legible
+        int ZEN_MODE_OFF = Settings.Global.ZEN_MODE_OFF;
+        int ZEN_MODE_NO_INTERRUPTIONS = Settings.Global.ZEN_MODE_NO_INTERRUPTIONS;
+        int asHeadsUp = notification.extras.getInt(Notification.EXTRA_AS_HEADS_UP,
+                Notification.HEADS_UP_ALLOWED);
+        boolean zenBlocksHeadsUp = Settings.Global.getInt(mContext.getContentResolver(),
+                Settings.Global.ZEN_MODE, ZEN_MODE_OFF) == ZEN_MODE_NO_INTERRUPTIONS;
         boolean isNoisy = (notification.defaults & Notification.DEFAULT_SOUND) != 0
                 || (notification.defaults & Notification.DEFAULT_VIBRATE) != 0
                 || notification.sound != null
@@ -2104,7 +2115,8 @@ public abstract class BaseStatusBar extends SystemUI implements
                 && !accessibilityForcesLaunch
                 && mPowerManager.isScreenOn()
                 && !keyguardIsShowing
-                && !isExpanded;
+                && !isExpanded
+                && !zenBlocksHeadsUp;
 
         try {
             interrupt = interrupt && !mDreamManager.isDreaming();
@@ -2114,7 +2126,8 @@ public abstract class BaseStatusBar extends SystemUI implements
 
         // its below our threshold priority, we might want to always display
         // notifications from certain apps
-        if (!isHighPriority && !isOngoing && !keyguardIsShowing && !isExpanded) {
+        if (!isHighPriority && !isOngoing && !keyguardIsShowing
+                    && !isExpanded && !zenBlocksHeadsUp) {
             // However, we don't want to interrupt if we're in an application that is
             // in Do Not Disturb
             if (!isPackageInDnd(getTopLevelPackage())) {
