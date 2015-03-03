@@ -442,6 +442,10 @@
     <!-- Heads up toast -->
     <string name="heads_up_enabled">Всплывающие уведомления включены</string>
     <string name="heads_up_disabled">Всплывающие уведомления отключены</string>
+    
+    <!--Ambient display qs tile -->
+    <string name="quick_settings_doze">Запрет спящего режима включен</string>
+    <string name="quick_settings_doze_off">Запрет спящего режима отключен</string>
 
     <!-- Lockscreen shortcuts -->
     <string name="left_shortcut_hint">Проведите вправо для %1$s</string>
