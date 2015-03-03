@@ -444,6 +444,10 @@
     <string name="heads_up_enabled">As notificações pop-up estão ativadas</string>
     <string name="heads_up_disabled">As notificações pop-up estão desativadas</string>
 
+    <!--Ambient display qs tile -->
+    <string name="quick_settings_doze">Modo Doze ativado</string>
+    <string name="quick_settings_doze_off">Modo Doze desativado</string>
+
     <!-- Lockscreen shortcuts -->
     <string name="left_shortcut_hint">Deslize a direita para %1$s</string>
     <string name="right_shortcut_hint">Deslize a esquerda para %1$s</string>
