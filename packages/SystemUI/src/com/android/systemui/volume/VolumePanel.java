@@ -184,7 +184,7 @@ public class VolumePanel extends Handler {
                 false),
         RingerStream(AudioManager.STREAM_RING,
                 R.string.volume_icon_description_ringer,
-                com.android.systemui.R.drawable.ic_ringer_audible,
+                com.android.systemui.R.drawable.ic_call_white,
                 com.android.systemui.R.drawable.ic_ringer_vibrate,
                 true),
         VoiceStream(AudioManager.STREAM_VOICE_CALL,
