@@ -4660,7 +4660,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
                     boolean mayChangeVolume = false;
 
                     if (isMusicActive()) {
-                        if (mVolBtnMusicControls) {
+                        if (mVolumeMusicControls) {
                             // Detect long key presses.
                             if (down) {
                                 mIsLongPress = false;
