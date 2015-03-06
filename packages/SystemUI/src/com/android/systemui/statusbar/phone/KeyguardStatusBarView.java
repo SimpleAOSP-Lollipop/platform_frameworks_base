@@ -39,11 +39,9 @@ import com.android.systemui.statusbar.policy.UserInfoController;
 /**
  * The header group on Keyguard.
  */
-public class KeyguardStatusBarView extends RelativeLayout
-        implements BatteryController.BatteryStateChangeCallback {
+public class KeyguardStatusBarView extends RelativeLayout {
 
     private boolean mKeyguardUserSwitcherShowing;
-    private boolean mBatteryListening;
 
     private TextView mCarrierLabel;
     private View mSystemIconsSuperContainer;
@@ -103,18 +101,6 @@ public class KeyguardStatusBarView extends RelativeLayout
         }
     }
 
-    public void setListening(boolean listening) {
-        if (listening == mBatteryListening) {
-            return;
-        }
-        mBatteryListening = listening;
-        if (mBatteryListening) {
-            mBatteryController.addStateChangedCallback(this);
-        } else {
-            mBatteryController.removeStateChangedCallback(this);
-        }
-    }
-
     private void updateUserSwitcher() {
         boolean keyguardSwitcherAvailable = mKeyguardUserSwitcher != null;
         mMultiUserSwitch.setClickable(keyguardSwitcherAvailable);
@@ -135,16 +121,6 @@ public class KeyguardStatusBarView extends RelativeLayout
                 mMultiUserAvatar.setImageDrawable(picture);
             }
         });
-    }
-
-    @Override
-    public void onBatteryLevelChanged(int level, boolean pluggedIn, boolean charging) {
-        // could not care less
-    }
-
-    @Override
-    public void onPowerSaveChanged() {
-        // could not care less
     }
 
     public void setKeyguardUserSwitcher(KeyguardUserSwitcher keyguardUserSwitcher) {
