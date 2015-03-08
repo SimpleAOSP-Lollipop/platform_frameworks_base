@@ -27,6 +27,7 @@ import android.content.res.Configuration;
 import android.database.ContentObserver;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.PowerManager;
 import android.os.UserHandle;
